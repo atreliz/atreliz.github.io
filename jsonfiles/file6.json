@@ -1,0 +1,16 @@
+{
+      "nodes": [
+              { "name": "Nodo0", "id":"ID0", "fixed":false,  "val": 10,   "color": "pink"},
+              { "name": "Nodo 1", "id":"ID1", "fixed":false,   "val": 10,   "color": "blue"},
+              { "name": "Nodo 2", "id":"ID2", "fixed":false ,"val": 10,   "color": "red"},
+              { "name": "Nodo 3", "id":"ID3", "fixed":false ,"val": 10,   "color": "green"},
+              { "name": "Nodo 4", "id":"ID4", "fixed":false ,"val": 10,   "color": "green"},
+              { "name": "Nodo 5", "id":"ID5", "fixed":false ,"val": 10,   "color": "green"}
+      ],
+      "edges": [
+              { "source": "ID0", "target": "ID1" ,   "color": "red",   "width": "4",   "shape": "0,0"},
+              { "source": "ID1", "target": "ID2" ,   "color": "red",   "width": "4",   "shape": "0,0"},
+              { "source": "ID1", "target": "ID3" ,   "color": "red",   "width": "4",   "shape": "0,0"},
+              { "source": "ID4", "target": "ID5" ,   "color": "red",   "width": "4",   "shape": "0,0"}
+      ]
+    }

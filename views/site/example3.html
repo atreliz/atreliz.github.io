@@ -1,0 +1,107 @@
+<!-- POC by AlexT-->
+<!-- https://github.com/krispo/angular-nvd3 -->
+<!-- http://krispo.github.io/angular-nvd3/#/quickstart -->
+
+<div>
+  
+  <h1 class="txtcenter">Angular + NVD3! (POC)</h1>
+  <div class="list">
+    <a href="#example1">Example 1: Bar Chart & Pie Chart</a>
+    <a href="#example2">Example 2: Scatter Chart</a>
+    <a class="active" href="#example3">Example 3: Study Case 0</a>
+    <a  href="#example4">Example 4: Graph Nodes+Edges (by angular)</a>
+    <a  href="#example5">Example 5: Graph Nodes+Edges (by D3)</a>
+         <a  href="#example6">Example 6: Graph Nodes+Edges (by D3) FORCES</a>
+  </div>
+  <hr>
+
+   <section class="fleft w100" >
+       <h2>USE CASE 0:</h2>  
+       <p>Front will take a JSON file order by date, with data about countries and values. Last textbox, call "Full data by Date" is the original one.</p>  
+       <p>This data will be show in differente charts, and needs to be ordered in different ways</p> 
+        <small><b>TEST: </b>This will test if front is strong enought to draw and reorder real data, of backend should provide data in different order</small> 
+        <!--p ng-init="dashboarOption='Dashwide'" >Change to small view {{dashboarOption}}
+          <button ng-click="dashboarOption='Dashline'">Dashboard compact</button>
+          <button ng-click="dashboarOption='Dashwide'">Dashboard full side</button>
+        </p-->
+
+      <hr>
+  </section>
+
+  <article class="dashboard {{dashboarOption}}">
+
+    <!-- BAR CHART-->
+     <section class="fleft w100" >
+         <h2>BAR CHART of a specific day in a range of Dates</h2>    
+    </section>
+
+
+      <section class="fleft w100">
+          <div class="fleft w70">
+            <p class="txtcenter">"Use the select or the slider to draw different Charts per day"</p>
+            <p class="txtcenter">Bar Chart from: {{choosenDate}}</p>
+            <nvd3 id="chart1" options='optionsPerDay' data='dataPerDay' ></nvd3>
+            <p class="txtcenter"><b>Note: </b>Just to try that we can join events between charts.</p>
+            <p class="txtcenter">If you click on a  bar, it will show/hide his lin char on the multichart behind</p>
+          </div>
+
+          <div class="fright w30">   
+             <h3 class="w80"> Choose a date to draw  </h3>
+
+             <p class="fleft w80">Acumulate dates: {{daysSize}}</p>
+             <p class="fleft w50">Or use a slider  <input ng-change="loadData(choosenDatePos)" ng-model="choosenDatePos" id="slider2" type ="range" min ="0" max="{{daysSize-1}}" step ="1" value ="0"/>
+             </p>
+             <p class="fleft w50">Select date: 
+              <select  ng-model="choosenDatePos" ng-change="loadData(choosenDatePos)">
+                  <option ng-selected="$index"
+                          ng-repeat="date in fullDataPerDay"
+                          value="{{$index}}">
+                    {{date.day}} 
+                  </option>
+              </select>
+
+             </p>
+
+
+
+            <h3 class="w80"> Data of a single choosen DATE </h3>
+            <textarea class="w80" ng-model="dataPerDaySTR" > </textarea>
+          </div>
+      </section>
+
+      <hr>
+       <section class="fleft w100">
+        <h2>LINE CHART countries evolution(no grouped), showing all dates</h2>
+          <div class="fleft w70">
+            <p class="txtcenter">"Countries evolution from 2012-01-01 to 2012-01-05"</p>
+            <p class="txtcenter">"use the colors to filter between countries"</p>
+            <nvd3 id="chart2" options='optionsLineChart' data='dataLineChart' ></nvd3>
+          </div>
+
+
+          <div class="fright w30">    
+            <h3>Full Data by Country</h3>
+            <textarea class="w80" ng-model="dataLineChartSTR" > </textarea>
+          </div>
+
+      </section>
+
+      <hr>
+       <section class="fleft w100">
+        <h2>BAR CHART grouped by countries, showing all dates</h2>
+          <div class="fleft w70">
+            <p class="txtcenter">"Countries values per day, grouped by country."</p>
+            <p class="txtcenter">" Use the colors to filter by Country, and Grouped/Stacked to have different views"</p>
+            <nvd3 id="chart3" options='optionsAllDates' data='dataAllDates' ></nvd3>
+          </div>
+
+          <div class="fright w30">    
+            <h3>Full Data by Date</h3>
+            <textarea class="w80" ng-model="BARValues" > </textarea>
+          </div>
+
+      </section>
+
+  </article><!-- Dashboard-->
+
+</div>

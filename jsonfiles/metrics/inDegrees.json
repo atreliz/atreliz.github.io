@@ -1,0 +1,62 @@
+{
+    "inDegrees": [
+                    {
+                        "id": 581920,
+                        "inDegree": 1
+                    }, {
+                        "id": 384936,
+                        "inDegree": 1
+                    }, {
+                        "id": 234852,
+                        "inDegree": 1
+                    }, {
+                        "id": 108778,
+                        "inDegree": 1
+                    }, {
+                        "id": 109108,
+                        "inDegree": 1
+                    }, {
+                        "id": 126894,
+                        "inDegree": 1
+                    }, {
+                        "id": 711577,
+                        "inDegree": 1
+                    }, {
+                        "id": 762521,
+                        "inDegree": 1
+                    }, {
+                        "id": 687439,
+                        "inDegree": 1
+                    }, {
+                        "id": 742851,
+                        "inDegree": 1
+                    }, {
+                        "id": 183667,
+                        "inDegree": 1
+                    }, {
+                        "id": 417111,
+                        "inDegree": 1
+                    }, {
+                        "id": 412895,
+                        "inDegree": 1
+                    }, {
+                        "id": 138551,
+                        "inDegree": 1
+                    }, {
+                        "id": 124225,
+                        "inDegree": 1
+                    }, {
+                        "id": 448037,
+                        "inDegree": 1
+                    }, {
+                        "id": 699461,
+                        "inDegree": 1
+                    }, {
+                        "id": 467413,
+                        "inDegree": 1
+                    }, {
+                        "id": 179999,
+                        "inDegree": 1
+                    }
+    ]
+}

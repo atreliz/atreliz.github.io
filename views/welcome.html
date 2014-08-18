@@ -1,0 +1,33 @@
+<!-- POC by AlexT-->
+
+<section>
+
+<!-- GH user data-->
+  <article>
+    <h2>Git hub User Data</h2>
+    <!--div>{{profileData.github.user}}</div-->
+    <div>
+      <p>Github user: <a target="_blanck" href="{{profileData.github.user.html_url}}">{{profileData.github.user.login}}</a> since: {{profileData.github.user.created_at}}</p>
+      <p>Name: {{profileData.github.user.name}}</p>
+      <p>Email: {{profileData.github.user.email}}</p>
+      <p>Blog: {{profileData.github.user.blog}}</p>
+      <p>Bio: {{profileData.github.user.bio}}</p>
+      <p><img src="{{profileData.github.user.avatar_url}}"></p>
+
+    </div>
+  </article>
+
+<!-- GH user repos-->
+  <article>
+    <h2>Git hub User Repos</h2>
+    <!--div>{{profileData.github.repos}}</div-->
+    <div ng-repeat="repo in profileData.github.repos">
+      <p>{{$index}}</p>
+      <p>{{repo.name}} since: {{repo.created_at}}</p>
+      <p>{{repo.language}}</p>
+      <p>{{repo.description}}</p>
+      <hr>
+    </div>
+  </article>
+
+</section>

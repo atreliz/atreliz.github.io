@@ -1,0 +1,154 @@
+{
+ "nodes": [
+  {
+   "name": "Nodo0",
+   "id": "ID0",
+   "val": 10,
+   "color": "blue",
+   "x": 520,
+   "y": 172,
+   "fixed": true,
+   "stadistics":[
+        {
+          "barchart":[{
+              "day": "2012-01-01",
+              "key": "2012-01-01",
+              "values": [
+                  {"label":"ES","value": 3},
+                  {"label":"FR","value": 5},
+                  {"label":"US","value": 2},
+                  {"label":"UK","value": 8},
+                  {"label":"GE","value": 1}
+              ]
+          }]
+        }
+      ]
+  },
+  {
+   "name": "Nodo1",
+   "id": "ID1",
+   "val": 5,
+   "color": "red",
+   "x": 67,
+   "y": 482,
+   "fixed": true,
+   "stadistics":[
+        {
+          "barchart":[{
+              "day": "2012-01-02",
+              "key": "2012-01-02",
+              "values": [
+                  {"label":"ES","value": 10},
+                  {"label":"FR","value": 9},
+                  {"label":"US","value": 8},
+                  {"label":"UK","value": 7},
+                  {"label":"GE","value": 6}
+              ]
+          }]
+        }
+      ]
+  },
+  {
+   "name": "Nodo2",
+   "id": "ID2",
+   "val": 20,
+   "color": "green",
+   "x": 377,
+   "y": 22,
+   "fixed": true,
+   "stadistics":[
+        {
+          "barchart":[{
+              "day": "2012-01-02",
+              "key": "2012-01-02",
+              "values": [
+                  {"label":"ES","value": 5},
+                  {"label":"FR","value": 0},
+                  {"label":"US","value": 4},
+                  {"label":"UK","value": 5},
+                  {"label":"GE","value": 4}
+              ]
+          }]
+        }
+      ]
+  },
+    {
+   "name": "Nodo3",
+   "id": "ID3",
+   "val": 5,
+   "color": "blue",
+   "x": 167,
+   "y": 42,
+   "fixed": true,
+   "stadistics":[
+        {
+          "barchart":[{
+              "day": "2012-01-02",
+              "key": "2012-01-02",
+              "values": [
+                  {"label":"ES","value": 1},
+                  {"label":"FR","value": 3},
+                  {"label":"US","value": 7},
+                  {"label":"UK","value": 7},
+                  {"label":"GE","value": 7}
+              ]
+          }]
+        }
+      ]
+  },
+  {
+   "name": "Nodo4",
+   "id": "ID4",
+   "val": 10,
+   "color": "red",
+   "x": 267,
+   "y": 242,
+   "fixed": true,
+   "stadistics":[
+        {
+          "barchart":[{
+              "day": "2012-01-02",
+              "key": "2012-01-02",
+              "values": [
+                  {"label":"ES","value": 10},
+                  {"label":"FR","value": 2},
+                  {"label":"US","value": 7},
+                  {"label":"UK","value": 3},
+                  {"label":"GE","value": 5}
+              ]
+          }]
+        }
+      ]
+  }
+ ],
+ "edges": [
+  {
+   "source": "ID0",
+   "target": "ID1",
+   "color": "black",
+   "width": "3",
+   "shape": "10,10"
+   },
+  {
+   "source": "ID0",
+   "target": "ID2",
+   "color": "red",
+   "width": "1",
+   "shape": "0,0"
+  },
+    {
+   "source": "ID1",
+   "target": "ID3",
+   "color": "green",
+   "width": "1",
+   "shape": "10,10"
+  },
+      {
+   "source": "ID1",
+   "target": "ID4",
+   "color": "red",
+   "width": "1",
+   "shape": "0,0"
+  }
+  ]
+}

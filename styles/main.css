@@ -1,0 +1,114 @@
+.fcenter{
+    margin: auto;
+    display: block;
+    width:100%;
+    height: auto;
+}
+
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+    margin:0px;
+    padding:0px;
+}
+
+header{
+    background:rgb(0, 143, 255);
+    color:white;
+    height: 80px;
+}
+header .title{margin-left:1%;}
+header a{
+    color: rgb(255, 255, 255);
+    width: auto;
+    text-decoration: none;
+    border-radius: 0px 0px 5px 5px;
+    padding: 5px;
+    display: block;
+    border: 1px solid rgb(255, 255, 255);
+    margin-right: 10px;
+}
+header a:hover, header a.active{background:white;  color:rgb(0, 143, 255);}
+
+aside{
+    background:red;
+    width:13%;
+    padding:1%;
+    position: absolute;
+    min-height: 500px;
+}
+aside.fleft{ top:80px; left:0px; border-radius: 0px 0px 10px 0px;}
+aside.fright{ top:80px; right:0px; border-radius: 0px 0px 0px 10px;}
+
+.btfloatleft{
+    position: absolute;
+    top: 98px;
+    right: 0px;
+}
+
+.btfloatright{
+    position: absolute;
+    top: 98px;
+    left: 0px;
+}
+
+button{cursor: pointer;}
+
+.workingPanel{
+
+    background:white;
+    width:98%;
+    padding:1%;
+
+}
+
+.graphBox{
+    height: 500px;
+}
+
+.sourceBox{
+    display: block;
+    margin-left: 20%;
+    min-height: 500px;
+}
+
+table{width:60%;}
+table,td, tr{
+    border:1px solid black;
+    text-align: center;
+}
+.menuBody table{width: 100%;}
+thead{ font-weight: bold; }
+thead td{ background:#ccc;}
+
+
+.menuNav li{    cursor: pointer;}
+.menuNav li.activeMenu,.menuNav li:hover{  font-weight: bold; color:white;}
+
+.centralOptionsMenu{
+    width: 10%;
+    margin: auto ;
+    display: block;
+    height: 20px;
+}
+.centralOptionsMenu.x3{width: 40%;}
+.centralOptionsMenu li{ display: block; float:left; margin: 0px 5px; padding: 5px; background: #ccc; border-radius: 5px;}
+.centralOptionsMenu li:hover,.centralOptionsMenu li.active{ color:white; font-weight: bold;}
+
+.gptable{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/*VERTEX AND NODES*/
+line{cursor:crosshair;opacity:.3;}
+circle{cursor: pointer;opacity:.3;}
+
+line:hover,line.active{ opacity:1;}
+circle:hover,circle.active{ opacity:1;}
+
+
+
+

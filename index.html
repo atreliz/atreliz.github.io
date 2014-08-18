@@ -1,0 +1,68 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Profiler</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <!-- build:css({.tmp,app}) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/poc.css">
+        <link rel="stylesheet" href="styles/ex4.css">
+        <link rel="stylesheet" href="styles/font-awesome.css">
+        
+        <link rel="stylesheet" href="bower_components/nvd3/nv.d3.css">
+        <!-- endbuild -->
+</head>
+  <body ng-app="ProfileApp">
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+      <script src="bower_components/es5-shim/es5-shim.js"></script>
+      <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <header class="w100 fleft">
+        <h1 class="title w50 fleft">HEADER</h1>
+
+    </header>
+
+    <!-- Here will load the views-->
+    <div class="container w100 fleft" ng-view=""></div>
+
+    <footer class="w100 fleft">
+        <p class="txtcenter">Alex Trebolle - All rights Reserved </p>
+    </footer>
+
+
+
+    <!-- script src="bower_components/jquery/jquery.js"></script -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src='bower_components/angular-route/angular-route.js'></script>
+    <script src="bower_components/d3/d3.js"></script>
+    <script src="bower_components/nvd3/nv.d3.js"></script> <!-- or use another assembly -->
+    <script src="bower_components/angular-nvd3/dist/angular-nvd3.js"></script>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script> <!-- Just for tricks -->
+  
+
+        <!-- build:js scripts/modules.js -->
+        <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/controller.js"></script>
+        <script src="scripts/services.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
