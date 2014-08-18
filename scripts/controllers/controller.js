@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('ProfileApp')
-  .controller('welcomeCtrl',['$scope','GitHubApi', function ($scope,GitHubApi) {
+  .controller('welcomeCtrl',['$scope','GitHubApi','LinkedinApi', function ($scope,GitHubApi,LinkedinApi) {
 
 
 		  //data to save data from apis
@@ -30,6 +30,16 @@ angular.module('ProfileApp')
 	            }, function(response) {//failed
 	                console.log(response);
 	            });
+
+			LinkedinApi.getUserData(user.linkedin).then(
+	            function(response) { //success
+	            	$scope.profileData.linkedin=response;
+	                console.log(response);
+	            }, function(response) {//failed
+	                console.log(response);
+	            });
+
+			
 
 		
 

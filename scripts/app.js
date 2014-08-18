@@ -9,8 +9,6 @@ angular.module('ProfileApp', ['ngRoute','nvd3','APIServices'])
 
 
     /*$httpProvider.defaults.useXDomain = true;
-    $httpProvider.defaults.headers.common['Cache-Control']='no-cache';
-    $httpProvider.defaults.headers.common['Pragma']='no-cache';
     delete $httpProvider.defaults.headers.common["X-Requested-With"];*/
     
     $routeProvider
@@ -53,14 +51,18 @@ angular.module('ProfileApp', ['ngRoute','nvd3','APIServices'])
 
   //users credentials
     var user={
-      github:"atreliz"
+      github:"atreliz",
+      linkedin:"atreliz",
+      twitter:"atreliz"
     };
 
 
   //site Urls
     var serviceUrl;
     var url={
-      github:"https://api.github.com"
+      github:"https://api.github.com",
+      linkedin:"atreliz",
+      twitter:"atreliz"
     };
 
   

@@ -2,9 +2,16 @@
 
 <section>
 
+  <!-- LINKEDIN user data-->
+  <article>
+    <h2>Linkedin User Data</h2>
+    <p> {{profileData.linkedin}}</p>
+
+  </article>
+
 <!-- GH user data-->
   <article>
-    <h2>Git hub User Data</h2>
+    <h2>Github User Data</h2>
     <!--div>{{profileData.github.user}}</div-->
     <div>
       <p>Github user: <a target="_blanck" href="{{profileData.github.user.html_url}}">{{profileData.github.user.login}}</a> since: {{profileData.github.user.created_at}}</p>
@@ -19,7 +26,7 @@
 
 <!-- GH user repos-->
   <article>
-    <h2>Git hub User Repos</h2>
+    <h2>Github User Repos</h2>
     <!--div>{{profileData.github.repos}}</div-->
     <div ng-repeat="repo in profileData.github.repos">
       <p>{{$index}}</p>
