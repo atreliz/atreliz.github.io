@@ -13,6 +13,7 @@ angular.module('ProfileApp')
 		      linkedin:{}
 
 		    };
+		    
     
 
 			GitHubApi.getUserData(user.github).then(
