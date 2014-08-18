@@ -65,6 +65,33 @@ angular.module('ProfileApp', ['ngRoute','nvd3','APIServices'])
       twitter:"atreliz"
     };
 
+    var linkedinData;
+
+
+//Linkedin
+//https://developer.linkedin.com/documents/javascript-api-tutorial
+
+  /*var allfields=["first-name","last-name","headline","location:(name)","picture-url","email-address","phone-numbers","languages","industry","num-connections","last-modified-timestamp","publications","certifications","educations","courses","positions","num-recommenders","recommendations-received","skills","group-memberships","network"];
+
+
+   // 1. Runs when the JavaScript framework is loaded
+    function onLinkedInLoad() {
+      IN.Event.on(IN, "auth", onLinkedInAuth);
+    }
+
+    // 2. Runs when the viewer has authenticated
+    function onLinkedInAuth() {
+      IN.API.Profile("me").fields(allfields).result(displayProfiles);
+    }
+
+
+    function displayProfiles(profiles) {
+         console.info("Linkedin profile");
+         console.log(profiles);
+         linkedinData=profiles;  
+    }*/
+
+
   
 
 
