@@ -52,23 +52,23 @@ angular.module('APIServices', []).
     		getRepos:getRepos
     	};
     }]).
-factory('LinkedinApi', ['$q','$http',function($q,$http){
+factory('configFile', ['$q','$http',function($q,$http){
     	
     	//Service to Load Local JSON files
-    	function getUserData(user){
-			serviceUrl = "http://api.linkedin.com/v1/people/~?oauth2_access_token=6f8c05b8-5124-413b-bbc8-534935d46515";
+    	function loadconfig(){
+			serviceUrl = "/configfile/profile.json";
 	        var deferred = $q.defer();
-	        console.log("calling for Linkedin data");
+	        console.log("calling for config file data");
 	        $http({
 	            'method': 'GET',
 	            'url': serviceUrl
 	        }).
 	        success(function(data, status) {
-	            console.log("YES GH USER DATA");
+	            console.log("YES config File");
 	            deferred.resolve(data);  
 	        }).
 	        error(function(data, status) {
-	            console.log("NO GH USER DATA");
+	            console.log("NO config file");
 	            deferred.reject(data); 
 	        });
 			return deferred.promise;
@@ -76,6 +76,6 @@ factory('LinkedinApi', ['$q','$http',function($q,$http){
 
 
 	    return {
-    		getUserData:getUserData
+    		loadconfig:loadconfig
     	};
 }]);

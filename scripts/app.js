@@ -4,7 +4,7 @@
   
 'use strict';
 
-angular.module('ProfileApp', ['ngRoute','nvd3','APIServices'])
+angular.module('ProfileApp', ['ngRoute','APIServices'])
   .config(['$routeProvider', '$httpProvider','$compileProvider', function ($routeProvider,$httpProvider,$compileProvider) {
 
 
@@ -12,32 +12,13 @@ angular.module('ProfileApp', ['ngRoute','nvd3','APIServices'])
     delete $httpProvider.defaults.headers.common["X-Requested-With"];*/
     
     $routeProvider
-    //POC EXAMPLES
-      .when('/example1', {
-        templateUrl: 'views/site/example1.html',
-        controller: 'example1Ctrl'
+      .when('/config', {
+        templateUrl: 'views/config.html'
       })
-      .when('/example2', {
-        templateUrl: 'views/site/example2.html',
-        controller: 'example2Ctrl'
+      .when('/twitter', {
+        templateUrl: 'views/twitter.html',
+        controller: 'twitterCtrl'
       })
-      .when('/example3', {
-        templateUrl: 'views/site/example3.html',
-        controller: 'example3Ctrl'
-      })
-      .when('/example4', {
-        templateUrl: 'views/site/example4.html',
-        controller: 'example4Ctrl'
-      })
-      .when('/example5', {
-        templateUrl: 'views/site/example5.html',
-        controller: 'example5Ctrl'
-      })
-      .when('/example6', {
-        templateUrl: 'views/site/example6.html',
-        controller: 'example6Ctrl'
-      })
-    //MAIN PROJECT
       .when('/', {
         templateUrl: 'views/welcome.html',
         controller: 'welcomeCtrl'

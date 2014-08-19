@@ -1,0 +1,26 @@
+<section>
+
+
+
+  <!-- Twitter user data-->
+  <article>
+
+			<p>Config: <b>Twitter</b> Account</p>
+
+			<button ng-click="twitterAsk()">Join your account</button> 
+			<input id="PINFIELD"></input><button ng-click="twitterJoin()"><i class="icon-twitter"></i>Insert pin to Join</button>
+   </article>
+   <article>
+   	<h2>Tweets</h2>
+   	<ul>
+   		<li ng-repeat="tweet in tweets">
+   			<p>#{{$index+1}} <b>{{tweet.created_at}}</b></p>
+   			<p>{{tweet.text}}</p>
+   			<a ng-repeat="url in tweet.entities.urls" href="{{url.expanded_url}}">{{url.expanded_url}}</a>
+   			<hr>
+
+   		</li>
+   	</ul>
+   </article>
+
+</section>

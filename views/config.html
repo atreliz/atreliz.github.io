@@ -1,0 +1,90 @@
+<section class="w100 page">
+
+
+
+  <!-- User configuration data-->
+  <article class=" box">
+			<h2>Config File: </h2>
+      <p>at /configFile/profile.json</p>
+      <!--p>{{config |json}}</p-->
+      <textarea class="w90 h200 fleft" ng-model="configSTR"></textarea>
+   </article>
+
+   
+
+
+
+    <!-- Twitter user data-->
+  <article class=" box" ng-controller="twitterCtrl">
+      <h2> Twitter Account: </h2>
+      <section class="fleft w50"><!-- configuration -->
+          <p>Config your: <b>Twitter</b> Account</p>
+          <button ng-click="twitterAsk()">Join your account</button> 
+          <input id="PINFIELD"></input><button ng-click="twitterJoin()"><i class="icon-twitter"></i>Insert pin to Join</button>
+          <p>Copy this data to twitter userCredential</p>
+          <textarea class="w90">{{config.twitter.userCredential}}</textarea>
+      </section>
+
+      <section class="fright w50"> <!-- results -->
+        <h4>Tweets</h4>
+        <p>Your Last 9 tweets
+          <button ng-clicks="loadTweets(config.twitter.userCredential,config.twitter.user)">reload tweets</button>
+        </p><br/>
+        <textarea class="w90">{{tweets}}</textarea>
+      </section>
+   </article>
+
+
+
+ 
+
+  <!-- Github user data-->
+   <article class=" box" ng-controller="gitHubCtrl">
+      <h2> Github Account: </h2>
+      <section class="fleft w50"><!-- configuration -->
+          <p>Config your: <b>GitHub</b> Account</p>
+          <input ng-model="ghuser"></input>
+          <button ng-click="config.github.user=ghuser">Insert user</button>
+          <button ng-click="githubRepos(config.github.user)">Register him</button>
+      </section>
+
+      <section class="fright w50"><!-- result -->
+          <h4>Github Repositories</h4>
+          <p>Your Repos and data
+            <button ng-clicks="githubRepos(config.github.user)">reload repos</button>
+          </p><br/>
+          <p>Data</p>
+          <textarea class="w90">{{githubUser}}</textarea>
+          <p>Repos</p>
+          <textarea class="w90">{{githubRepos}}</textarea>
+      </section>
+  
+   </article>
+
+
+
+     <!-- Linkedin user data-->
+   <article class=" box" ng-controller="linkedinCtrl">
+      <h2> Linkedin Account: </h2>
+      <section class="fleft w50"><!-- configuration -->
+          <p>Config your: <b>GitHub</b> Account</p>
+          <script type="in/Login">       Hello, <?js= firstName ?> <?js= lastName ?>.   </script>
+      </section>
+
+      <section class="fright w50"><!-- result -->
+          <h4>Likedin data </h4>
+          <p>Your data
+            <button ng-clicks="reloadLinkedin()">reload</button>
+          </p><br/>
+          <p>Data</p>
+          <textarea class="w90">{{linkedinData}}</textarea>
+          
+      </section>
+  
+   </article>
+
+
+
+
+
+</section>
