@@ -6,7 +6,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Web Profile</title>
+    <title>My Web Profile</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -14,6 +14,7 @@
         <!-- build:css({.tmp,app}) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="styles/font-awesome.css">
+        <link rel="stylesheet" href="styles/welcome.css">
         <!-- endbuild -->
 
 
@@ -29,7 +30,7 @@
 
 
 </head>
-  <body ng-app="ProfileApp" ng-controller="loadConfigCtrl">
+  <body ng-app="ProfileApp" ng-controller="loadConfigCtrl" class="{{mode}}">
     <!--[if lt IE 7]>
       <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
     <![endif]-->
@@ -42,10 +43,6 @@
     <!-- Add your site or application content here -->
     <header class="w100 fleft">
         <h1 class="title w50 fleft">HEADER</h1>
-        
-            <a href="#/">PROFILE</a>    <a href="#/config">Config</a>
-        
-
     </header>
 
     <!-- Here will load the views-->

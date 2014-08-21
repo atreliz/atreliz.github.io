@@ -3,6 +3,8 @@
 angular.module('ProfileApp')
   	.controller('loadConfigCtrl',['$scope','$rootScope','$http','configFile','GitHubApi', function ($scope,$rootScope,$http,configFile,GitHubApi) {
 
+		$rootScope.mode="config";//this will let you use different css on config and welcome page
+		console.log("loadConfigCtrl controller loaded,css mode: "+$rootScope.mode);
 		//all data will be reusable from here
 		$rootScope.apiProfile={ "github":{},"twitter":{},"linkedin":{},"extra":{} };
 
@@ -196,8 +198,9 @@ angular.module('ProfileApp')
 
   	}])
 
-  	.controller('welcomeCtrl',['$scope','GitHubApi', function ($scope,GitHubApi) {
-		console.log("welcome controller loaded");
+  	.controller('welcomeCtrl',['$scope','$rootScope', function ($scope,$rootScope) {
+  		$rootScope.mode="cv";
+		console.log("welcome controller loaded,css mode: "+$rootScope.mode);
 		//Made a call to get data from apis using the data config
 		//api data to scope
 
