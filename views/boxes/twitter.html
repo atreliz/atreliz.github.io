@@ -1,0 +1,19 @@
+    <!-- Twitter user data-->
+  <article class=" box" ng-controller="twitterCtrl">
+      <h2> Twitter Account: </h2>
+      <section class="fleft w50"><!-- configuration -->
+          <p>Config your: <b>Twitter</b> Account</p>
+          <button ng-click="twitterAsk()">Join your account</button> 
+          <input id="PINFIELD"></input><button ng-click="twitterJoin()"><i class="icon-twitter"></i>Insert pin to Join</button>
+          <p>Copy this data to twitter userCredential</p>
+          <textarea class="w90">{{config.twitter.userCredential}}</textarea>
+      </section>
+
+      <section class="fright w50"> <!-- results -->
+        <h4>Tweets</h4>
+        <p>Your Last 9 tweets
+          <button ng-clicks="loadTweets(config.twitter.userCredential,config.twitter.user)">reload tweets</button>
+        </p><br/>
+        <textarea class="w90">{{tweets}}</textarea>
+      </section>
+   </article>

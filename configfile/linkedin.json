@@ -1,0 +1,595 @@
+{
+    "_key": "~",
+    "certifications": {
+        "_total": 2,
+        "values": [{
+            "id": 76,
+            "name": "Startup Engineering"
+        }, {
+            "id": 77,
+            "name": "M101JS: MongoDB for Node.js Developers ( grade: 85%)"
+        }]
+    },
+    "courses": {
+        "_total": 1,
+        "values": [{
+            "id": 68,
+            "name": "Optimized Java Script"
+        }]
+    },
+    "educations": {
+        "_total": 6,
+        "values": [{
+            "endDate": {
+                "year": 2010
+            },
+            "id": 123214492,
+            "startDate": {
+                "year": 2010
+            }
+        }, {
+            "endDate": {
+                "year": 2010
+            },
+            "id": 123214524,
+            "startDate": {
+                "year": 2010
+            }
+        }, {
+            "endDate": {
+                "year": 2010
+            },
+            "id": 135308237,
+            "schoolName": "EC Cape Town",
+            "startDate": {
+                "year": 2010
+            }
+        }, {
+            "endDate": {
+                "year": 2007
+            },
+            "id": 123214588,
+            "startDate": {
+                "year": 2007
+            }
+        }, {
+            "endDate": {
+                "year": 2007
+            },
+            "id": 123214690,
+            "startDate": {
+                "year": 2007
+            }
+        }, {
+            "endDate": {
+                "year": 2005
+            },
+            "id": 71533335,
+            "startDate": {
+                "year": 2000
+            }
+        }]
+    },
+    "emailAddress": "atreliz@gmail.com",
+    "firstName": "Alex",
+    "headline": "Front End Web & Mobile Hybrid Apps developer at Zed",
+    "industry": "Graphic Design",
+    "languages": {
+        "_total": 5,
+        "values": [{
+            "id": 56,
+            "language": {
+                "name": "Español"
+            }
+        }, {
+            "id": 57,
+            "language": {
+                "name": "English"
+            }
+        }, {
+            "id": 58,
+            "language": {
+                "name": "French"
+            }
+        }, {
+            "id": 59,
+            "language": {
+                "name": "Portugues"
+            }
+        }, {
+            "id": 60,
+            "language": {
+                "name": "Japanese"
+            }
+        }]
+    },
+    "lastModifiedTimestamp": 1266973562237,
+    "lastName": "Trebolle Liz",
+    "location": {
+        "name": "Madrid Area, Spain"
+    },
+    "numConnections": 419,
+    "numRecommenders": 6,
+    "phoneNumbers": {
+        "_total": 0
+    },
+    "pictureUrl": "http://m.c.lnkd.licdn.com/mpr/mprx/0_e0hbvuNcubsW_USPeM3qvanI860d342Po4q4vakwx8IJOyR1XJrwRmr5mIx9C0DxWpGMsWV6PpEQ",
+    "positions": {
+        "_total": 8,
+        "values": [{
+            "company": {
+                "id": 18187
+            },
+            "id": 405168615,
+            "isCurrent": true,
+            "startDate": {
+                "month": 6,
+                "year": 2013
+            }
+        }, {
+            "company": {
+                "id": 560469
+            },
+            "endDate": {
+                "month": 5,
+                "year": 2013
+            },
+            "id": 336147839,
+            "isCurrent": false,
+            "startDate": {
+                "month": 11,
+                "year": 2012
+            }
+        }, {
+            "company": {
+                "id": 579702
+            },
+            "endDate": {
+                "month": 11,
+                "year": 2012
+            },
+            "id": 188023069,
+            "isCurrent": false,
+            "startDate": {
+                "month": 4,
+                "year": 2011
+            }
+        }, {
+            "company": {},
+            "endDate": {
+                "month": 4,
+                "year": 2011
+            },
+            "id": 312765643,
+            "isCurrent": false,
+            "startDate": {
+                "month": 12,
+                "year": 2010
+            }
+        }, {
+            "company": {},
+            "endDate": {
+                "month": 12,
+                "year": 2010
+            },
+            "id": 188022505,
+            "isCurrent": false,
+            "startDate": {
+                "month": 1,
+                "year": 2006
+            }
+        }, {
+            "company": {},
+            "endDate": {
+                "month": 10,
+                "year": 2010
+            },
+            "id": 188019911,
+            "isCurrent": false,
+            "startDate": {
+                "month": 10,
+                "year": 2007
+            }
+        }, {
+            "company": {},
+            "endDate": {
+                "month": 10,
+                "year": 2010
+            },
+            "id": 111063565,
+            "isCurrent": false,
+            "startDate": {
+                "month": 7,
+                "year": 2007
+            }
+        }, {
+            "company": {},
+            "endDate": {
+                "month": 6,
+                "year": 2007
+            },
+            "id": 188021803,
+            "isCurrent": false,
+            "startDate": {
+                "month": 1,
+                "year": 2007
+            }
+        }]
+    },
+    "publications": {
+        "_total": 6,
+        "values": [{
+            "date": {
+                "day": 13,
+                "month": 12,
+                "year": 2013
+            },
+            "id": 78,
+            "title": "GameMe5"
+        }, {
+            "date": {
+                "day": 30,
+                "month": 5,
+                "year": 2013
+            },
+            "id": 80,
+            "title": "Mediterranean API DAY"
+        }, {
+            "date": {
+                "day": 9,
+                "month": 11,
+                "year": 2013
+            },
+            "id": 82,
+            "title": "GDG Madrid DevFest 2013"
+        }, {
+            "date": {
+                "day": 20,
+                "month": 4,
+                "year": 2013
+            },
+            "id": 84,
+            "title": "Madrid Firefox OS Workshop"
+        }, {
+            "date": {
+                "day": 5,
+                "month": 7,
+                "year": 2013
+            },
+            "id": 86,
+            "title": "SPAIN JS 2013"
+        }, {
+            "date": {
+                "day": 1,
+                "month": 6,
+                "year": 2014
+            },
+            "id": 187,
+            "title": "Wii U  Nintendo developer"
+        }]
+    },
+    "recommendationsReceived": {
+        "_total": 6,
+        "values": [{
+            "id": 46144626,
+            "recommendationText": "Alejandro is a very smart and detailed professional. He has the ability to learn fast and always delivers the results before the deadlines. Alejandro's tech knowledge and expertise was one of the key factors in our group of working in Microsoft's Innovation Center. I enjoyed very much working with him both because of his professional way to do all the activities and he's an excellent co-worker.",
+            "recommendationType": {
+                "code": "colleague"
+            },
+            "recommender": {
+                "firstName": "Alexandre",
+                "id": "bvoQTqHUc2",
+                "lastName": "Lucena"
+            }
+        }, {
+            "id": 41416990,
+            "recommendationText": "I have worked with Alejandro for the past two years where we have spent amazing time working in the office and abroad. Travelling with Alejandro was real fun. He is sort of person who love exploring things. I managed to learn lots of history about different countries, cultures and tourist place.\r\n\r\nWhile he was working for Concise, one thing really surprised me that he used to take enormous amount work load and as usual always completing them on time with big smile and joke. He is the person who can be trusted and depend on.\r\n\r\nAs an IOS developer, Alejandro used to run lots of event in different part of the world with me. Part of the job involve me to set-up an intranet, which always happen to be the day before the event. Though Alejandro had nothing to do on that day, but he always used to come with me to the venue, helped me set-up the system and network. He is a very good team player. \r\n\r\nAlejandro is always very good at his work in development, he always used to go extra mile for clients. Clients loved him. Most of the time he used to get dinner or drinks invitation from our clients as matter of appreciation. Most importantly our project managers always used to choose him as a developer on site because he was most flexible, he never moan about nothing, he is good at his work and clients easily like him. I would say 85 % of the onsite job abroad for last two years done by Alejandro. \r\n\r\nHaving him in our team was a big success. I would always love to work with him. He can be a success to any company. \r\n\r\nFew thought about his hobbies, he love to explore the world. Always mad about Pan Cake and taking pictures. Loves Cape Town. Also he can not eat spicy food at all.   \r\n\r\n________________________________________________________\r\n\r\nAlejandro is a honest, trustworthy, reliable, organise person and I highly recommend him. If you have any questions, feel free to contact me at +44 774 732 9495 or myemail at imdadul.karim@concisegroup.com.",
+            "recommendationType": {
+                "code": "colleague"
+            },
+            "recommender": {
+                "firstName": "Imdadul",
+                "id": "yXg6i7s4q2",
+                "lastName": "Karim"
+            }
+        }, {
+            "id": 48621289,
+            "recommendationText": "Alejandro es el compañero de trabajo perfecto, es una persona proactiva y resolutiva, siempre dispuesto a ofrecer lo mejor de sí mismo.\r\n\r\nSu carácter optimista y capacidad de auto-motivación se transmite al equipo generando un ambiente de trabajo estupendo.\r\n\r\nA nivel técnico diría de Alejandro que es una persona de elevado potencial, con una gran capacidad de aprendizaje y adaptación. Sus inquietudes le mantienen atento a las novedades tecnológicas del mercado... En definitiva, se nota que le apasiona su trabajo.\r\n\r\nPor último me gustaría destacar sus dotes comunicativas, su dilatada experiencia en la relación con el cliente le convierten en la persona idónea para cargos de mayor responsabilidad.\r\n\r\nSin duda, su esfuerzo y dedicación constantes aseguran el éxito de cualquier proyecto en el que participe.",
+            "recommendationType": {
+                "code": "colleague"
+            },
+            "recommender": {
+                "firstName": "Javier",
+                "id": "WoD3fPvm7Z",
+                "lastName": "Larrea Garcia"
+            }
+        }, {
+            "id": 48613209,
+            "recommendationText": "Alex es ante todo una gran persona, siempre de buen humor y un grandísimo profesional. Excelente compañero. El tiempo que trabajamos juntos demostró tener un gran potencial y perspectiva. Su seguridad y proactividad aseguraban el éxito de todos los proyectos...",
+            "recommendationType": {
+                "code": "colleague"
+            },
+            "recommender": {
+                "firstName": "Matías",
+                "id": "zK4B9glapA",
+                "lastName": "Delgado Ródenas"
+            }
+        }, {
+            "id": 48265297,
+            "recommendationText": "Coincidí en Adesis Netlife con Alejandro y rápidamente me di cuenta de sus cualidades como desarrollador Front-end. Domina las parcelas Html5, CSS3 y Javascript, los desarrollos Responsive Web design e incluso los desarrollos para aplicaciones moviles híbridas.\r\nSu constante desarrollo profesional y preocupación por las últimas tecnologias es otro factor a tener en cuenta. Pero lo que realmente caracteriza a Alejandro es su positivismo, capacidad de comunicación y compañerismo.\r\nEn definitiva, Alejandro posee todas las cualidades que toda empresa del sector pueda buscar",
+            "recommendationType": {
+                "code": "colleague"
+            },
+            "recommender": {
+                "firstName": "Alfonso",
+                "id": "2KSjUheGXS",
+                "lastName": "de Antonio"
+            }
+        }, {
+            "id": 47972021,
+            "recommendationText": "Alex es un compañero de trabajo fantástico con el que he aprendido muchísimo cada día. \r\n\r\nSabe adaptarse perfectamente a cualquier situación y la desempeña con soltura destacando su capacidad para resolverla. Es capaz de trabajar en equipo proponiendo soluciones y alternativas a los problemas que puedan surgir.\r\n\r\nNo solo se preocupa por los proyectos en los que colabora sino que siempre está dispuesto a ayudar a los compañeros que puedan plantearle alguna cuestión.\r\n\r\nA pesar de dominar numerosas tecnologías de desarrollo front y móvil no se para ahí. Está al día de las tecnologías emergentes y no duda en investigar para seguir aprendiendo e incrementando sus cualidades. En su desempeño diario se ve reflejado que le gusta lo que hace.\r\n\r\nSin duda un recurso muy valioso para cualquier empresa, un compañero de trabajo excelente y una persona que continúa creciendo cada día.",
+            "recommendationType": {
+                "code": "colleague"
+            },
+            "recommender": {
+                "firstName": "Alejandro",
+                "id": "7SXDTbECaN",
+                "lastName": "Arroyo"
+            }
+        }]
+    },
+    "skills": {
+        "_total": 50,
+        "values": [{
+            "id": 140,
+            "skill": {
+                "name": "Angularjs"
+            }
+        }, {
+            "id": 141,
+            "skill": {
+                "name": "HTML 5"
+            }
+        }, {
+            "id": 142,
+            "skill": {
+                "name": "CSS3"
+            }
+        }, {
+            "id": 143,
+            "skill": {
+                "name": "JavaScript"
+            }
+        }, {
+            "id": 144,
+            "skill": {
+                "name": "SASS"
+            }
+        }, {
+            "id": 145,
+            "skill": {
+                "name": "MongoDB"
+            }
+        }, {
+            "id": 146,
+            "skill": {
+                "name": "JSON"
+            }
+        }, {
+            "id": 147,
+            "skill": {
+                "name": "Web Design"
+            }
+        }, {
+            "id": 148,
+            "skill": {
+                "name": "jQuery"
+            }
+        }, {
+            "id": 149,
+            "skill": {
+                "name": "Jade"
+            }
+        }, {
+            "id": 150,
+            "skill": {
+                "name": "Twitter Bootstrap"
+            }
+        }, {
+            "id": 151,
+            "skill": {
+                "name": "Node.js"
+            }
+        }, {
+            "id": 152,
+            "skill": {
+                "name": "PhoneGap"
+            }
+        }, {
+            "id": 153,
+            "skill": {
+                "name": "Android Development"
+            }
+        }, {
+            "id": 154,
+            "skill": {
+                "name": "iOS development"
+            }
+        }, {
+            "id": 155,
+            "skill": {
+                "name": "jQuery Mobile"
+            }
+        }, {
+            "id": 156,
+            "skill": {
+                "name": "jQTouch"
+            }
+        }, {
+            "id": 157,
+            "skill": {
+                "name": "Wordpress"
+            }
+        }, {
+            "id": 158,
+            "skill": {
+                "name": "PSD to Wordpress"
+            }
+        }, {
+            "id": 159,
+            "skill": {
+                "name": "JSONP"
+            }
+        }, {
+            "id": 160,
+            "skill": {
+                "name": "AJAX"
+            }
+        }, {
+            "id": 161,
+            "skill": {
+                "name": "QuarkXPress"
+            }
+        }, {
+            "id": 162,
+            "skill": {
+                "name": "English"
+            }
+        }, {
+            "id": 163,
+            "skill": {
+                "name": "Spanish"
+            }
+        }, {
+            "id": 164,
+            "skill": {
+                "name": "French"
+            }
+        }, {
+            "id": 165,
+            "skill": {
+                "name": "Portuguese"
+            }
+        }, {
+            "id": 166,
+            "skill": {
+                "name": "XML"
+            }
+        }, {
+            "id": 167,
+            "skill": {
+                "name": "MySQL"
+            }
+        }, {
+            "id": 168,
+            "skill": {
+                "name": "SQLite"
+            }
+        }, {
+            "id": 169,
+            "skill": {
+                "name": "PHP"
+            }
+        }, {
+            "id": 170,
+            "skill": {
+                "name": "CMS"
+            }
+        }, {
+            "id": 171,
+            "skill": {
+                "name": "Business Travel"
+            }
+        }, {
+            "id": 172,
+            "skill": {
+                "name": "Wireless Networking"
+            }
+        }, {
+            "id": 173,
+            "skill": {
+                "name": "Network Administration"
+            }
+        }, {
+            "id": 174,
+            "skill": {
+                "name": "Network Design"
+            }
+        }, {
+            "id": 175,
+            "skill": {
+                "name": "Mobile Applications"
+            }
+        }, {
+            "id": 176,
+            "skill": {
+                "name": "LAMP"
+            }
+        }, {
+            "id": 177,
+            "skill": {
+                "name": "WAMP"
+            }
+        }, {
+            "id": 178,
+            "skill": {
+                "name": "MAMP"
+            }
+        }, {
+            "id": 179,
+            "skill": {
+                "name": "Cross-browser Compatibility"
+            }
+        }, {
+            "id": 180,
+            "skill": {
+                "name": "W3C Standards"
+            }
+        }, {
+            "id": 181,
+            "skill": {
+                "name": "Mobile Devices"
+            }
+        }, {
+            "id": 182,
+            "skill": {
+                "name": "Front-end"
+            }
+        }, {
+            "id": 183,
+            "skill": {
+                "name": "REST"
+            }
+        }, {
+            "id": 184,
+            "skill": {
+                "name": "Amazon Web Services (AWS)"
+            }
+        }, {
+            "id": 185,
+            "skill": {
+                "name": "Big Data"
+            }
+        }, {
+            "id": 186,
+            "skill": {
+                "name": "d3.js"
+            }
+        }, {
+            "id": 189,
+            "skill": {
+                "name": "Git"
+            }
+        }, {
+            "id": 190,
+            "skill": {
+                "name": "APIs"
+            }
+        }, {
+            "id": 191,
+            "skill": {
+                "name": "Apache"
+            }
+        }]
+    }
+}

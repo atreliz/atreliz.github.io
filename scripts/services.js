@@ -2,10 +2,10 @@
 angular.module('APIServices', []).
 /*GIT HUB API:User public data, User public repos*/
     factory('GitHubApi', ['$q','$http',function($q,$http){
-    	
+    	var githubUrl="https://api.github.com";
     	//Service to Load Local JSON files
     	function getUserData(user){
-			serviceUrl = url.github+"/users/"+user;
+			serviceUrl = githubUrl+"/users/"+user;
 	        var deferred = $q.defer();
 	        console.log("calling for GH data");
 	        $http({
@@ -26,7 +26,7 @@ angular.module('APIServices', []).
 		//Service to Load  JSON files by REST
 	    function getRepos(user){
 
-    		serviceUrl = url.github+"/users/"+user+"/repos";
+    		serviceUrl = githubUrl+"/users/"+user+"/repos";
 	        
 	        var deferred = $q.defer();
 	        console.log("calling for repos");
@@ -55,20 +55,20 @@ angular.module('APIServices', []).
 factory('configFile', ['$q','$http',function($q,$http){
     	
     	//Service to Load Local JSON files
-    	function loadconfig(){
-			serviceUrl = "/configfile/profile.json";
+    	function loadconfig(file){
+			serviceUrl = "/configfile/"+file;
 	        var deferred = $q.defer();
-	        console.log("calling for config file data");
+	        console.log("calling for file data "+file);
 	        $http({
 	            'method': 'GET',
 	            'url': serviceUrl
 	        }).
 	        success(function(data, status) {
-	            console.log("YES config File");
+	            console.log("YES File: "+file);
 	            deferred.resolve(data);  
 	        }).
 	        error(function(data, status) {
-	            console.log("NO config file");
+	            console.log("NO File: "+file);
 	            deferred.reject(data); 
 	        });
 			return deferred.promise;

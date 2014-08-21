@@ -3,13 +3,12 @@
 <section>
 
 
-
-  <!-- twitter user data-->
+<!-- twitter user data-->
   <article class="api-section">
 
     <h2>Tweets</h2>
     <ul>
-      <li ng-repeat="tweet in tweets">
+      <li ng-repeat="tweet in apiProfile.twitter">
         <p>#{{$index+1}} <b>{{tweet.created_at}}</b></p>
         <p>{{tweet.text}}</p>
         <a ng-repeat="url in tweet.entities.urls" href="{{url.expanded_url}}">{{url.expanded_url}}</a>
@@ -20,14 +19,14 @@
 
   </article>
 
-  <!-- LINKEDIN user data-->
+<!-- LINKEDIN user data-->
   <article  class="api-section">
 
     <p>Config: <b>Linkedin</b> Account</p>
 
   
     <h2>Linkedin User Data</h2>
-    <p> {{linkedinData |json}}</p>
+    <p> {{apiProfile.linkedin |json}}</p>
 
   </article>
 
@@ -36,18 +35,18 @@
     <h2>Github User Data</h2>
     <!--div>{{profileData.github.user}}</div-->
     <div>
-      <p>Github user: <a target="_blanck" href="{{githubUser.html_url}}">{{githubUser.login}}</a> since: {{githubUser.created_at}}</p>
-      <p>Name: {{githubUser.name}}</p>
-      <p>Email: {{githubUser.email}}</p>
-      <p>Blog: {{githubUser.blog}}</p>
-      <p>Bio: {{githubUser.bio}}</p>
-      <p><img src="{{githubUser.avatar_url}}"></p>
+      <p>Github user: <a target="_blanck" href="{{githubUser.html_url}}">{{apiProfile.github.user.login}}</a> since: {{apiProfile.github.user.created_at}}</p>
+      <p>Name: {{apiProfile.github.user.name}}</p>
+      <p>Email: {{apiProfile.github.user.email}}</p>
+      <p>Blog: {{apiProfile.github.user.blog}}</p>
+      <p>Bio: {{apiProfile.github.user.bio}}</p>
+      <p><img src="{{apiProfile.github.user.avatar_url}}"></p>
 
     </div>
 
     <h2>Github User Repos</h2>
     <!--div>{{profileData.github.repos}}</div-->
-    <div ng-repeat="repo in githubRepos">
+    <div ng-repeat="repo in apiProfile.github.repos">
       <p>{{$index}}</p>
       <p>{{repo.name}} since: {{repo.created_at}}</p>
       <p>{{repo.language}}</p>

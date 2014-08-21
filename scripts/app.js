@@ -15,10 +15,6 @@ angular.module('ProfileApp', ['ngRoute','APIServices'])
       .when('/config', {
         templateUrl: 'views/config.html'
       })
-      .when('/twitter', {
-        templateUrl: 'views/twitter.html',
-        controller: 'twitterCtrl'
-      })
       .when('/', {
         templateUrl: 'views/welcome.html',
         controller: 'welcomeCtrl'
@@ -28,40 +24,28 @@ angular.module('ProfileApp', ['ngRoute','APIServices'])
       });
   }]);
 
-  //----- Main configuration ----//
-
-  //users credentials
-    var user={
-      github:"atreliz",
-      linkedin:"atreliz",
-      twitter:"atreliz"
-    };
-
-
-  //site Urls
-    var serviceUrl;
-    var url={
-      github:"https://api.github.com",
-      linkedin:"atreliz",
-      twitter:"atreliz"
-    };
-
-    var linkedinData;
 
 
 
-    //detect the Git hub user from query param, or atreliz as default
-    //ie: http://localhost:9000/#/?github=Quaiks
 
-      function detectGitHubUserOnQuery(){
-            if(location.hash.indexOf("#/?github=")>=0){
-                return location.hash.replace("#/?github=","");
-            }else{
-              return "atreliz";
-            }
-        };
+/*MAIN CONFIGURATION*/
+    /*Alex T Twitter app that get your data*/
+        var cb = new Codebird; 
+              //developer APP "YOURKEY" and "YOURSECRET"
+            //Twitter app credentials created before
+              var TWkey="3cKRfCeMqCv2HbecGCkGXLEtX";
+              var TWsecret="Z9E0NDUbCdBKkvAd0HBe3DDtaKPxwGeyMe9kTKY5061AneXyaP";
+              cb.setConsumerKey(TWkey, TWsecret);
 
-       user.github=detectGitHubUserOnQuery();
+
+//Notes:
+//Github api with no auth, let you get 60request xhour from the same ip
+//twitter token does not expirate
+//linkedin oauth2 does not let you a continious login
+
+
+//Feel free to make your own angular template on the welcome.html site
+//ALL data will be storage on this object  $rootScope.apiProfile
 
   
 
