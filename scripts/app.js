@@ -4,7 +4,7 @@
   
 'use strict';
 
-angular.module('ProfileApp', ['ngRoute','APIServices'])
+angular.module('ProfileApp', ['ngRoute','ngSanitize','APIServices'])
   .config(['$routeProvider', '$httpProvider','$compileProvider', function ($routeProvider,$httpProvider,$compileProvider) {
 
 

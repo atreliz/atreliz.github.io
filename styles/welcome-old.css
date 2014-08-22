@@ -1,0 +1,63 @@
+/*General*/
+body.cv{
+	background: rgba(0,0,0,.8);
+}
+
+body.cv header{display:none;}
+
+body.cv .api-section{
+
+	float:left;
+    display: block;
+    background: white;
+    width: 96%;
+    margin: 1% 1%;
+    padding: 1%;
+
+    border-radius: 5px;
+    border:black 1px solid;
+}
+
+
+a:hover{font-weight: bold;}
+
+
+
+/*Contact*/
+body.cv #contact{
+	width:29%;
+	padding: 1%;
+	float:left;
+	height: 400px;
+	margin: 1% 1%;
+}
+body.cv #contact img{
+	margin: auto;
+	display: block;
+	width:50%;
+	height:50%;
+}
+
+
+
+/*Code*/
+
+body.cv #code{
+	width:29%;
+	padding: 1%;
+	float:left;
+	height: 400px;
+	overflow: auto;
+	margin: 1% 1.2%;
+}
+
+/*tweets*/
+
+body.cv #tweets{
+	width:29%;
+	padding: 1%;
+	float:left;
+	height: 400px;
+	margin: 1% 1%;
+	overflow: auto;
+}

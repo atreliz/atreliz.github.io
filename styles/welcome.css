@@ -1,63 +1,82 @@
 /*General*/
-body.cv{
-	background: rgba(0,0,0,.8);
-}
+body.cv{	background: rgba(255,255,255,1);font-size: 17px; font-family: arial;} 
 
 body.cv header{display:none;}
 
-body.cv .api-section{
 
+/*NAV OPTIONS*/
+body.cv  nav{ float:left;color:white; background: black; padding:1%; width:98%; margin-bottom:1%;}
+body.cv  nav.title{text-align: center;font-size:26px; font-weight: bold; margin-top:1%;}
+
+body.cv  nav.options ul{ margin:auto; width:auto; text-align: center;}
+body.cv  nav.options ul li{display: inline-block; width:auto; margin:0 1%;}
+body.cv  nav.options ul li a{text-decoration: none; color:white; font-weight: bold;font-size: 18px;}
+body.cv  nav.options ul li a.active,body.cv  nav.options ul li a:hover{ color:red; }
+
+/*Me section*/
+.api-section{box-shadow: 0px 0px 10px  black;}
+
+body.cv #me .imgprofile{ border-radius: 50%; width:90%; height: auto; margin: auto;}
+
+
+
+body.cv  a{font-weight: bold; color: black;}
+body.cv  a:hover{ color: red;}
+
+
+body.cv .circle{
+	border-radius: 18px;
+	border: 1px solid rgb(0, 0, 0);
+	padding: 2px 6px;
+	width: auto;
+	text-align: center;
+	margin-bottom: 10px;
+	float: left;
+}
+
+body.cv .repos{
+	width:21%;
+	padding:1%;
+	margin:0 1%;
+	margin-top: 1%;
 	float:left;
-    display: block;
-    background: white;
-    width: 96%;
-    margin: 1% 1%;
-    padding: 1%;
-
-    border-radius: 5px;
-    border:black 1px solid;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px  grey;
+	min-height: 175px;
+	cursor:pointer;
 }
 
+body.cv .repos:hover{
+	color:white;
+	background: black;
+}
+body.cv .repos:hover .title{color:red;}
+body.cv .repos:hover a{color:white;}
 
-a:hover{font-weight: bold;}
+body.cv .repos:hover .circle{border-color:white; }
 
+body.cv .tweet  .title,body.cv .repos .title{color:black; font-weight: bold;}
+body.cv .tweet  .title:hover{color:black; font-weight: bold;}
+body.cv .repos .description{font-style: italic;padding: 3% 0%;}
+body.cv .tweet a,body.cv .repos li a{font-weight: bold; color: black;}
+body.cv .tweet a:hover,body.cv .repos li a:hover{ color: red;}
 
+body.cv .tweet li .small,body.cv .repos li .small{ margin-top:10px; font-size: 12px; }
 
-/*Contact*/
-body.cv #contact{
-	width:29%;
-	padding: 1%;
+body.cv .tweet{
+	width:45%;
+	padding:1%;
+	margin:0 1%;
+	margin-top: 1%;
 	float:left;
-	height: 400px;
-	margin: 1% 1%;
-}
-body.cv #contact img{
-	margin: auto;
-	display: block;
-	width:50%;
-	height:50%;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px  grey;
+	min-height: 100px;
+
 }
 
+body.cv  #recomendations{
 
-
-/*Code*/
-
-body.cv #code{
-	width:29%;
-	padding: 1%;
-	float:left;
-	height: 400px;
-	overflow: auto;
-	margin: 1% 1.2%;
 }
 
-/*tweets*/
 
-body.cv #tweets{
-	width:29%;
-	padding: 1%;
-	float:left;
-	height: 400px;
-	margin: 1% 1%;
-	overflow: auto;
-}

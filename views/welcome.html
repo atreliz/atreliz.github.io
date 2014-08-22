@@ -2,57 +2,120 @@
 
 <section>
 
+<!-- options navigation bar-->
+
+  <nav class="title">
+        <h2>{{apiProfile.github.user.name}} interactive Resume</h2>
+  </nav>
+
+  <nav class="options">
+    <ul >
+          <li><a href="#me">Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+           <li><a href="#code">Code</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#tweets">Network</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+  </nav>
+
 
 <!-- GH user data-->
-  <article  id="contact" class="api-section">
-    <h2>Contact Info</h2>
-    <div>
+  <article  id="me" class="api-section">
 
-      <p>Name: {{apiProfile.github.user.name}}</p>
-      <p>Email: {{apiProfile.github.user.email}}</p>
-      <p>Blog: {{apiProfile.github.user.blog}}</p>
-      <p>Bio: {{apiProfile.github.user.bio}}</p>
-      <p><img src="{{apiProfile.github.user.avatar_url}}"></p>
+    <div class="w30 fleft">
+      <img class="imgprofile" src="{{apiProfile.github.user.avatar_url}}" >
+      <!--img class="imgprofile" src="{{apiProfile.linkedin.pictureUrl}}"-->
     </div>
 
+    <div class="w70 fright">
+      <h2 class="txtcenter">{{apiProfile.github.user.name}}</h2>
+      <p ng-bind-html="apiProfile.extra.description"></p>
+
+        <h4 class="txtcenter">Recomendations <i class="fa fa-comments"></i> </h4>
+        <div id="recomendations" class="w80 fleft owl-carousel">
+            <div class="recomendation" ng-repeat="recommendation in apiProfile.linkedin.recommendationsReceived.values">
+              <p>{{recommendation.recommendationText}}</p>
+              <p class="small">by {{recommendation.recommender.firstName}} {{recommendation.recommender.lastName}}</p>
+            </div>
+        </div>
+
+    </div>
   </article>
+
+
+<!-- twitter user data-->
+  <article class="api-section" id="skills">
+    <h2 class="txtcenter">My Skills <i class="fa fa fa-rebel"></i> </h2>
+
+      <div class="w50 fleft">
+        <h4>Developer Skills</h4>
+        <ul>
+          <li class="w50 fleft" ng-repeat="skill in apiProfile.linkedin.skills.values">{{skill.skill.name}}</li>
+        </ul>
+      </div>
+
+        <div class="w50 fright">
+          <h4>Courses & certifications</h4>
+          <ul>
+            <li ng-repeat="cert in apiProfile.linkedin.certifications.values">{{cert.name}}</li>
+            <li ng-repeat="course in apiProfile.linkedin.courses.values">{{course.name}}</li>
+          </ul>
+
+
+        <h4>Events</h4>
+          <ul>
+            <li ng-repeat="event in apiProfile.linkedin.publications.values">{{event.title}} ({{event.date.day}}/{{event.date.month}}/{{event.date.year}})</li>
+          </ul>
+
+        <h4>Languages</h4>
+          <ul>
+            <li ng-repeat="lang in apiProfile.linkedin.languages.values">{{lang.language.name}}</li>
+          </ul>
+
+        </div>
+
+  </article>
+
+
 
   <article  id="code" class="api-section">
-    <h2>My code in Github </h2>
-      <p>Using Github since: {{apiProfile.github.user.created_at}}</p>
-      <p>Github user: <a target="_blanck" href="{{githubUser.html_url}}">{{apiProfile.github.user.login}}</a></p>
+    <h2 class="txtcenter"><a target="_blanck" href="{{githubUser.html_url}}">My code</a> in Github <i class="fa fa fa-github-alt"></i> </h2>
+    <p class="txtcenter">Last update: {{apiProfile.github.user.updated_at}} user: <b>{{apiProfile.github.user.login}}</b></p>
 
-    <h3>Github User Repos</h3>
     <!--div>{{profileData.github.repos}}</div-->
-    <div ng-repeat="repo in apiProfile.github.repos">
-      <p>{{$index}}</p>
-      <p>{{repo.name}} since: {{repo.created_at}}</p>
-      <p>{{repo.language}}</p>
-      <p>{{repo.description}}</p>
-      <hr>
-    </div>
-
+    <ul class="repos" ng-repeat="repo in apiProfile.github.repos">
+        <a target="_blanck" href="{{repo.html_url}}">
+          <li class=" w100 fleft"><span class="circle">{{$index+1}}</span> </li>
+          <li class=" w100 fleft txtcenter title">{{repo.name}} </li>
+          <li class=" w100 fleft txtcenter description">{{repo.description}} </li>
+          <li class=" w100 fleft txtcenter"> 
+            <i class="fa fa-github"></i> Take a look to the <a target="_blanck" href="{{repo.html_url}}">Repo</a>
+          </li>
+          <li class=" w100 fleft"><span class="small fright">{{repo.created_at}}</span> </li>
+        </a>
+    </ul>
   </article>
+
 
 <!-- twitter user data-->
   <article class="api-section" id="tweets">
+    <h2 class="txtcenter">My Tweets <i class="fa fa fa-twitter"></i> </h2>
+    <p class="txtcenter">This is what I'm talking about</p>
 
-    <h2>My Tweets</h2>
-    <p>This is what I'm talking about</p>
-    <ul>
-      <li ng-repeat="tweet in apiProfile.twitter">
-        <p>#{{$index+1}} <b>{{tweet.created_at}}</b></p>
-        <p>{{tweet.text}}</p>
-        <a ng-repeat="url in tweet.entities.urls" href="{{url.expanded_url}}">{{url.expanded_url}}</a>
-        <hr>
-
-      </li>
+    <ul class="tweet" ng-repeat="tweet in apiProfile.twitter">
+      <li class=" w100 fleft txtcenter"> <i class="fa fa fa-twitter-square"></i> {{tweet.text}}</li>
+      <li class=" w100 fleft txtcenter"><a ng-repeat="url in tweet.entities.urls" href="{{url.expanded_url}}">{{url.expanded_url}}</a></li>
+      <li class=" w100 fleft txtcenter"> <span class="small fright">{{tweet.created_at}}</span></li>
     </ul>
 
   </article>
 
 <!-- LINKEDIN user data-->
-  <article  class="api-section">
+  <!-- article  class="api-section">
+
+
+
 
     <h2>Linkedin User Data</h2>
     <p>Updated on: {{apiProfile.linkedin.lastModifiedTimestamp | date:'dd/MM/yyyy @ h:mma'}}</p>
@@ -105,19 +168,29 @@
     </ul>
   </div>
 
-    <!--p> {{apiProfile.linkedin |json}}</p-->
+    <p> {{apiProfile.linkedin |json}}</p
 
+  </article-->
+
+
+<!-- GH user data-->
+  <article  id="contact" class="api-section">
+    <h2>Contact Info</h2>
+    <div>
+      <p>Name: {{apiProfile.github.user.name}}</p>
+      <p>Email: {{apiProfile.github.user.email}}</p>
+      <p>Blog: {{apiProfile.github.user.blog}}</p>
+    </div>
   </article>
 
 
-
 <!-- Extra  data-->
-  <article class="api-section">
+  <!--article class="api-section">
 
     <h2>Extra data</h2>
     <div>{{apiProfile.extra |json}}</div>
 
-  </article>
+  </article-->
 
 
 </section>

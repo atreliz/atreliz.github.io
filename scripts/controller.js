@@ -198,11 +198,41 @@ angular.module('ProfileApp')
 
   	}])
 
-  	.controller('welcomeCtrl',['$scope','$rootScope', function ($scope,$rootScope) {
+  	.controller('welcomeCtrl',['$scope','$rootScope','$timeout', function ($scope,$rootScope,$timeout) {
   		$rootScope.mode="cv";
 		console.log("welcome controller loaded,css mode: "+$rootScope.mode);
 		//Made a call to get data from apis using the data config
 		//api data to scope
+
+		$timeout(function(){
+
+
+				  $("#recomendations").owlCarousel({
+				 
+				      navigation : true, // Show next and prev buttons
+				      slideSpeed : 300,
+				      paginationSpeed : 400,
+				      singleItem:true
+				 
+				      // "singleItem:true" is a shortcut for:
+				      // items : 1, 
+				      // itemsDesktop : false,
+				      // itemsDesktopSmall : false,
+				      // itemsTablet: false,
+				      // itemsMobile : false
+				 
+				  });
+ 
+
+			$('a').click(function(){
+					    $('html, body').animate({
+					        scrollTop: $( $.attr(this, 'href') ).offset().top
+					    }, 500);
+					    return false;
+					});
+		}, 0);
+
+		
 
 
 
