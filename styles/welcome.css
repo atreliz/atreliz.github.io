@@ -3,7 +3,6 @@ body.cv{	background: rgba(255,255,255,1);font-size: 17px; font-family: arial;}
 
 body.cv header{display:none;}
 
-
 /*NAV OPTIONS*/
 body.cv  nav{ float:left;color:white; background: black; padding:1%; width:98%; margin-bottom:1%;}
 body.cv  nav.title{text-align: center;font-size:26px; font-weight: bold; margin-top:1%;}
@@ -13,17 +12,31 @@ body.cv  nav.options ul li{display: inline-block; width:auto; margin:0 1%;}
 body.cv  nav.options ul li a{text-decoration: none; color:white; font-weight: bold;font-size: 18px;}
 body.cv  nav.options ul li a.active,body.cv  nav.options ul li a:hover{ color:red; }
 
-/*Me section*/
-.api-section{box-shadow: 0px 0px 10px  black;}
+/*fixed menu*/
+body.cv  nav.title{position:fixed; }
+body.cv  nav.options {position:fixed; top:12%;}
+body.cv  #me{margin-top:12%; }
+body.cv  nav.blurry{
+	position: fixed;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	height: 13%;
+	background: rgba(255, 255, 255, 0.8);
+}
 
-body.cv #me .imgprofile{ border-radius: 50%; width:90%; height: auto; margin: auto;}
+/*Me section*/
+.api-section{box-shadow: 0px 0px 10px  black; background: rgb(245, 245, 245);}
+
+body.cv #me .imgprofile{ border-radius: 50%; width:90%; height: auto; margin: auto; margin-top: 50px; box-shadow: 0px 0px 10px  black;}
 
 
 
 body.cv  a{font-weight: bold; color: black;}
 body.cv  a:hover{ color: red;}
 
-
+body.cv #me ul{list-style: initial;}
+body.cv #me ul li{margin-left: 50px;}
 body.cv .circle{
 	border-radius: 18px;
 	border: 1px solid rgb(0, 0, 0);
@@ -57,7 +70,7 @@ body.cv .repos:hover .circle{border-color:white; }
 
 body.cv .tweet  .title,body.cv .repos .title{color:black; font-weight: bold;}
 body.cv .tweet  .title:hover{color:black; font-weight: bold;}
-body.cv .repos .description{font-style: italic;padding: 3% 0%;}
+body.cv .repos .description{font-style: italic;padding: 3% 0%; font-weight: normal;}
 body.cv .tweet a,body.cv .repos li a{font-weight: bold; color: black;}
 body.cv .tweet a:hover,body.cv .repos li a:hover{ color: red;}
 
@@ -75,8 +88,23 @@ body.cv .tweet{
 
 }
 
-body.cv  #recomendations{
 
+body.cv  #recomendations .owl-wrapper-outer{
+	box-shadow: 0px 0px 5px rgb(0, 0, 0);
+	border-radius: 5px;
 }
+
+body.cv  #recomendations .recomendation {padding:1%;color: grey;}
+body.cv  #recomendations .recomendation .small{text-align: right;font-style: italic;color:black;}
+
+body.cv  #recomendations .owl-controls {
+	position: absolute;
+	top: 0px;
+	text-align: center;
+	margin: auto;
+	clear: both;
+	right: 40%;
+}
+body.cv  #recomendations .owl-wrapper-outer{margin-top: 64px;}
 
 

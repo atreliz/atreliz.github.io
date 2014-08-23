@@ -26,10 +26,12 @@ header a:hover, header a.active{ color:rgb(255, 255, 255);}
 
 
 h2{font-size: 24px; padding:1% 0%;}
+h3{font-size: 20px; padding:1% 0%;}
 h4{font-size: 20px; padding:1% 0%; font-weight: bold;}
 
 p{padding: 1% 0%;}
 .top10{margin-top:10px}
+.top20{margin-top:20px}
 a{ text-decoration: none;}
 b{font-weight: bold;}
 

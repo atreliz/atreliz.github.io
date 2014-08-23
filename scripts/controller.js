@@ -154,6 +154,9 @@ angular.module('ProfileApp')
 										          	$scope.$apply(function () {
 											            $rootScope.tweets= reply.statuses;
 											            $rootScope.apiProfile.twitter=reply.statuses;
+											             console.info("-------");
+											            console.info(reply.statuses);
+											            
 											        });
 										        
 										    }
@@ -207,21 +210,14 @@ angular.module('ProfileApp')
 		$timeout(function(){
 
 
-				  $("#recomendations").owlCarousel({
-				 
+				 $("#recomendations").owlCarousel({
 				      navigation : true, // Show next and prev buttons
 				      slideSpeed : 300,
 				      paginationSpeed : 400,
 				      singleItem:true
 				 
-				      // "singleItem:true" is a shortcut for:
-				      // items : 1, 
-				      // itemsDesktop : false,
-				      // itemsDesktopSmall : false,
-				      // itemsTablet: false,
-				      // itemsMobile : false
-				 
 				  });
+
  
 
 			$('a').click(function(){
@@ -233,6 +229,49 @@ angular.module('ProfileApp')
 		}, 0);
 
 		
+
+  	}])
+  
+
+  	.controller('twitterCtrl',['$scope','$rootScope','$timeout', function ($scope,$rootScope,$timeout) {
+
+
+			 
+				 	$timeout(function(){
+				       			$("#other").owlCarousel({
+								      navigation : true, // Show next and prev buttons
+								      slideSpeed : 300,
+								      paginationSpeed : 400,
+								      singleItem:true
+								 
+								  }); 
+				    }, 0);
+			   
+
+
+
+  	}])
+  	.controller('jobsCtrl',['$scope','$rootScope','$timeout', function ($scope,$rootScope,$timeout) {
+
+
+
+  		$timeout(function(){
+
+
+		
+
+				 $("#jobs").owlCarousel({
+				      navigation : true, // Show next and prev buttons
+				      slideSpeed : 300,
+				      paginationSpeed : 400,
+				      singleItem:true
+				 
+				  });
+
+ 
+
+		}, 0);
+
 
 
 

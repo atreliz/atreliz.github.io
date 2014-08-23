@@ -1,19 +1,15 @@
     <!-- Twitter user data-->
-  <article class=" box" ng-controller="twitterCtrl">
-      <h2> Twitter Account: </h2>
-      <section class="fleft w50"><!-- configuration -->
-          <p>Config your: <b>Twitter</b> Account</p>
-          <button ng-click="twitterAsk()">Join your account</button> 
-          <input id="PINFIELD"></input><button ng-click="twitterJoin()"><i class="icon-twitter"></i>Insert pin to Join</button>
-          <p>Copy this data to twitter userCredential</p>
-          <textarea class="w90">{{config.twitter.userCredential}}</textarea>
-      </section>
+   <div ng-controller="twitterCtrl" >
+      <h2 class="txtcenter">My Tweets <i class="fa fa fa-twitter"></i> </h2>
+      <p class="txtcenter">This is what I'm talking about</p>
 
-      <section class="fright w50"> <!-- results -->
-        <h4>Tweets</h4>
-        <p>Your Last 9 tweets
-          <button ng-clicks="loadTweets(config.twitter.userCredential,config.twitter.user)">reload tweets</button>
-        </p><br/>
-        <textarea class="w90">{{tweets}}</textarea>
-      </section>
-   </article>
+      <div id="other" class="w80 fleft owl-carousel">
+        {{apiProfile.twitter}}
+          <ul class="tweet" ng-repeat="tweet in apiProfile.twitter">
+            <li class=" w100 fleft txtcenter"> <i class="fa fa fa-twitter-square"></i> {{tweet.text}}</li>
+            <li class=" w100 fleft txtcenter"><a ng-repeat="url in tweet.entities.urls" href="{{url.expanded_url}}">{{url.expanded_url}}</a></li>
+            <li class=" w100 fleft txtcenter"> <span class="small fright">{{tweet.created_at}}</span></li>
+          </ul>
+       </div>
+  
+   </div>

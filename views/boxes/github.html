@@ -1,5 +1,14 @@
   <!-- Github user data-->
-   <article class=" box" >
- pepep
+   <div ng-controller="twitterCtrl" >
+	    <h2 class="txtcenter">My Tweets <i class="fa fa fa-twitter"></i> </h2>
+	    <p class="txtcenter">This is what I'm talking about</p>
+
+	    <div id="other" class="w80 fleft owl-carousel">
+	        <ul class="tweet" ng-repeat="tweet in apiProfile.twitter">
+	          <li class=" w100 fleft txtcenter"> <i class="fa fa fa-twitter-square"></i> {{tweet.text}}</li>
+	          <li class=" w100 fleft txtcenter"><a ng-repeat="url in tweet.entities.urls" href="{{url.expanded_url}}">{{url.expanded_url}}</a></li>
+	          <li class=" w100 fleft txtcenter"> <span class="small fright">{{tweet.created_at}}</span></li>
+	        </ul>
+	     </div>
   
-   </article>
+   </div>
