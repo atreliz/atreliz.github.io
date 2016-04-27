@@ -17,8 +17,10 @@
         <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="styles/font-awesome.css">
         <link rel="stylesheet" href="styles/welcome.css">
+        <link rel="stylesheet" href="styles/newvertical.css">
         <link rel="stylesheet" href="bower_components/owl-carousel/owl.carousel.css">
         <link rel="stylesheet" href="bower_components/owl-carousel/owl.theme.css">
+        <link rel="stylesheet" href="bower_components/nvd3/nv.d3.css">
         <!-- endbuild -->
 
 
@@ -34,7 +36,7 @@
 
 
 </head>
-  <body ng-app="ProfileApp" ng-controller="loadConfigCtrl" class="{{mode}}">
+  <body ng-app="ProfileApp" ng-controller="loadConfigCtrl" class="{{mode}}" ng-cloak>
     <!--[if lt IE 7]>
       <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
     <![endif]-->
@@ -45,14 +47,15 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <header class="w100 fleft">
+    <!--header class="w100 fleft">
         <h1 class="title w50 fleft">HEADER</h1>
-    </header>
+    </header-->
 
     <!-- Here will load the views-->
     <div class="container w100 fleft" ng-view=""></div>
 
     <footer class="wcenter  fleft">
+        <p class="txtcenter" ng-show='mode==undefined'> <img src='images/spinner.gif'> </p>
         <p class="txtcenter">Alex Trebolle - All rights Reserved </p>
     </footer>
 
@@ -67,6 +70,12 @@
     <script src="bower_components/codebird.js"></script>
     <script src='bower_components/jquery/jquery.js'></script>
     <script src="bower_components/owl-carousel/owl.carousel.js"></script>
+
+
+    <!-- use for D3-->
+    <script src="bower_components/d3/d3.js"></script>
+    <script src="bower_components/nvd3/nv.d3.js"></script> <!-- or use another assembly -->
+    <script src="bower_components/angular-nvd3/dist/angular-nvd3.js"></script>
 
   
 

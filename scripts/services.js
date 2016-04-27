@@ -56,7 +56,7 @@ factory('configFile', ['$q','$http',function($q,$http){
     	
     	//Service to Load Local JSON files
     	function loadconfig(file){
-			serviceUrl = "/configfile/"+file;
+			serviceUrl = "configfile/"+file;
 	        var deferred = $q.defer();
 	        console.log("calling for file data "+file);
 	        $http({

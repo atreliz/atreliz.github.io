@@ -4,7 +4,7 @@
   
 'use strict';
 
-angular.module('ProfileApp', ['ngRoute','ngSanitize','APIServices'])
+angular.module('ProfileApp', ['ngRoute','ngSanitize','APIServices','nvd3'])
   .config(['$routeProvider', '$httpProvider','$compileProvider', function ($routeProvider,$httpProvider,$compileProvider) {
 
 
@@ -15,9 +15,17 @@ angular.module('ProfileApp', ['ngRoute','ngSanitize','APIServices'])
       .when('/config', {
         templateUrl: 'views/config.html'
       })
-      .when('/', {
+      .when('/simple', {
+        templateUrl: 'views/welcome-simple.html',
+        controller: 'welcomeCtrl'
+      })
+      .when('/welcome', {
         templateUrl: 'views/welcome.html',
         controller: 'welcomeCtrl'
+      })
+      .when('/', {
+        templateUrl: 'views/newelcome.html',
+        controller: 'newelcomeCtrl'
       })
       .otherwise({
         redirectTo: '/'

@@ -1,0 +1,251 @@
+<!-- POC by AlexT-->
+
+<section>
+
+
+
+
+
+<!-- Introduction user data-->
+  <article  id="intro" class="api-section">
+      <div class="w100 fleft" id="sky">
+        <h2  class="txtcenter mainTitle">{{apiProfile.github.user.name}}</h2>
+        <h3  class="txtcenter subTitle">{{apiProfile.linkedin.headline}}</h3>
+        <h3  class="txtcenter subTitle">{{apiProfile.linkedin.subheadline}}</h3>
+      
+
+        <!-- options navigation bar-->
+        <nav class="options">
+            <ul>
+                <li><a href="#intro">Top</a></li>
+                <li><a href="#me">Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#work">Jobs</a></li>
+                <li><a href="#clients">Clients</a></li>
+                <li><a href="#code">Code</a></li>
+                <li><a href="#tweets">Tweets</a></li>
+                <li><a href="#recommend">Recommendations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div id="logos">
+          <div class="blockcenter">
+              <img src="images/logos/angularjs.png">
+              <img src="images/logos/jslogo.png">
+              <img src="images/logos/css3-logo-icon.png">
+              <img src="images/logos/HTML5.png">
+              <img src="images/logos/pack2.gif">
+              <img src="images/logos/gulp_logo.png">
+              <img src="images/logos/PhoneGapLogo_small.png">
+
+            </div>
+            <div class="blockcenter">
+              <img src="images/logos/github-logos-278px.png">
+              <img src="images/logos/nodejs-logo.png">
+              <img src="images/logos/meanlogo.png">
+              <img src="images/logos/mongodb.png">
+              <img src="images/logos/jenkins_logo-300x96.png">
+              <img src="images/logos/amazon-web-services.png">
+            </div>
+            
+        </div>
+
+      </div>
+  </article>
+
+<!--About Me,  user data-->
+  <article  id="me" class="api-section insider">
+        
+
+          <div class=" fleft" id="imager">
+            <img class="imgprofile" src="{{apiProfile.github.user.avatar_url}}" >
+            <!--img class="imgprofile" src="{{apiProfile.linkedin.pictureUrl}}"-->
+
+              <ul class=" fleft top20" id="pskills">
+                <li class="fleft " ng-repeat="skill in apiProfile.extra.personalskills">{{skill}}</li>
+              </ul>
+
+          </div>
+
+          <div class="w65 fright">
+            <h2 class="txtcenter">About me</h2>
+            <!-- description-->
+            <p class="summary" ng-bind-html="apiProfile.extra.description"></p>
+            <!--closing  description-->
+            
+            <p class="w50 fleft txtcenter"> PDF RESUME: <a href="{{apiProfile.extra.url1}}"> download </a></p>
+            <p class="w50 fright txtcenter">OLD Portfolio: <a href="{{apiProfile.extra.portfolio}}">here </a> </p>
+            
+
+          </div>
+
+      
+  </article>
+
+<!-- SKILLS user data-->
+  <article class="api-section insider" id="skills">
+    <div ng-include="'views/boxes/graphs.html'" ></div>
+
+
+
+  </article>
+
+
+<!-- jobs user data-->
+  <article class="api-section insider" id="work" >
+    <h2 class="txtcenter txtwhite">Job experience <i class="fa fa fa-coffee"></i> </h2>
+    <p class="txtcenter txtwhite" style=" margin-left: 300px;">Since 2007 to NOW</p>
+    <div ng-include="'views/boxes/jobs.html'" ></div>
+
+  </article>
+
+
+
+<!-- GITHUB -->
+  <article  id="clients" class="api-section insider">
+    <h2 class="txtcenter">Clients</a> </h2>
+    <!--p class="txtcenter">Last update: {{apiProfile.github.user.updated_at}} user: <b>{{apiProfile.github.user.login}}</b></p-->
+
+    <!--div>{{profileData.github.repos}}</div-->
+      <img src="images/clients/accor_logo.png">
+      <img src="images/clients/aia_logo.png">
+      <img src="images/clients/apollo_logo.png">
+      <img src="images/clients/astrazeneca_logo.png">
+      <img src="images/clients/barclays_logo.png">
+      <img src="images/clients/bnp_logo.png">
+      <img src="images/clients/boa_logo.png">
+      <img src="images/clients/centrica_logo.png">
+      <img src="images/clients/ge_logo.png">
+      <img src="images/clients/hsbc_logo.png">
+      <img src="images/clients/mondi_logo.png">
+      <img src="images/clients/morgan_logo.png">
+      <img src="images/clients/novartis_logo.png">
+      
+      <img src="images/clients/quintiles_logo.png">
+      <img src="images/clients/skandia_logo.png">
+      <img src="images/clients/takeda_logo.png">
+      <img src="images/clients/visa_logo.png">
+
+      <img src="images/clients/pyro_logo.png">
+
+      <img src="images/clients/zed_logo.png">
+      <img src="images/clients/repsol_logo.jpeg">
+
+      <img src="images/clients/mapfre_logo.jpg">
+      <img src="images/clients/santander_logo.png">
+      <img src="images/clients/pvh_logo.png">
+
+
+
+</article>
+
+
+
+
+<!-- GITHUB -->
+  <article  id="code" class="api-section insider">
+    <h2 class="txtcenter"><a target="_blanck" href="{{githubUser.html_url}}">My code</a> in Github <i class="fa fa fa-github-alt"></i> </h2>
+    <!--p class="txtcenter">Last update: {{apiProfile.github.user.updated_at}} user: <b>{{apiProfile.github.user.login}}</b></p-->
+
+    <!--div>{{profileData.github.repos}}</div-->
+    <ul class="repos flip-container" ng-repeat="repo in apiProfile.github.repos" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+            <a target="_blanck" href="{{repo.html_url}}"  class="front" >
+                <li class=" w100 fleft"><span class="circle">{{$index+1}}</span> </li>
+                <li class=" w100 fleft txtcenter title">{{repo.name}} </li>
+
+                <li class=" w100 fleft txtcenter description">{{repo.description}} </li>
+                <li class=" w100 fleft"><span class="small fright">{{repo.created_at}}</span> </li>
+            </a>
+
+            <a target="_blanck" href="{{repo.html_url}}" class="back">
+                <li class=" w100 fleft txtcenter top50"> 
+                  <i class="fa fa-github"></i> Click to Take a look to the Repo
+                </li>
+            </a>
+        </div>
+    </ul>
+
+
+    <!--ul class="repos" ng-repeat="repo in apiProfile.github.repos">
+        <a target="_blanck" href="{{repo.html_url}}">
+          <li class=" w100 fleft"><span class="circle">{{$index+1}}</span> </li>
+          <li class=" w100 fleft txtcenter title">{{repo.name}} </li>
+          <li class=" w100 fleft txtcenter description">{{repo.description}} </li>
+          <li class=" w100 fleft txtcenter"> 
+            <i class="fa fa-github"></i> Take a look to the <a target="_blanck" href="{{repo.html_url}}">Repo</a>
+          </li>
+          <li class=" w100 fleft"><span class="small fright">{{repo.created_at}}</span> </li>
+        </a>
+    </ul-->
+  </article>
+
+
+<!-- twitter user data-->
+  <article class="api-section insider" id="tweets" >
+
+      <h2 class="txtcenter">My Tweets <i class="fa fa fa-twitter txtblue"></i> </h2>
+      <p class="txtcenter">This is what I'm talking about</p>
+
+       <div  class="w100 fleft ">
+          <ul class="tweet" ng-repeat="tweet in apiProfile.twitter">
+
+            <li class=" w100 fleft txtcenter"> 
+              <i class="fa fa fa-twitter-square txtblue"></i> {{tweet.text}}</li>
+
+            <li class=" w100 fleft txtcenter ellipsis top20"><a ng-repeat="url in tweet.entities.urls" href="{{url.expanded_url}}">{{url.expanded_url}}</a></li>
+
+            <li class=" w100 fleft txtcenter"> <span class="small fright">{{tweet.created_at}}</span></li>
+          </ul>
+       </div>
+  
+   
+    <!--div ng-include="'views/boxes/twitter.html'" ></div-->
+
+  </article>
+
+<!-- Recommendations-->
+  <article  id="recommend" class="api-section insider">
+    <div class="fleft w100">
+
+        <h2 class="txtcenter top20 fleft w100">Recomendations <i class="fa fa-comments"></i> </h2>
+        <div id="recomendations" class="w80 fleft owl-carousel">
+            <div class="recomendation" ng-repeat="recommendation in apiProfile.linkedin.recommendationsReceived.values">
+                  <div class="recomendationtxtbox">
+                    <p>{{recommendation.recommendationText}}</p>
+                  </div>
+
+                  <div class="firm">
+                    <span class="arrow-down"></span>
+                     <p class="small signer">{{recommendation.recommender.firstName}} {{recommendation.recommender.lastName}}</p>
+                  </div>
+            </div>
+        </div>
+  </article>
+
+
+<!-- GH user data-->
+  <article  id="contact" class="api-section insider">
+    <h2>Contact Info</h2>
+    <div>
+     
+      <p class="w30 txtcenter fleft"><i class="fa fa-envelope"></i> <a href="{{apiProfile.github.user.email}}">{{apiProfile.github.user.email}}</a></p>
+      <p class="w30 txtcenter fleft"> <i class="fa fa-book"></i> <a href="{{apiProfile.extra.portfolio}}">{{apiProfile.extra.portfolio}}</a></p>
+      <p class="w30 txtcenter fleft"> <i class="fa fa-twitter"></i> <a href="https://twitter.com/Alex_Trebolle">https://twitter.com/Alex_Trebolle</a></p>
+      <p class="w50 txtcenter fleft"> <i class="fa fa-github"></i> <a href="{{githubUser.html_url}}">{{githubUser.html_url}}</a></p>
+      <p class="w50 txtcenter fleft"><i class="fa fa-linkedin-square"></i>  <a href="https://www.linkedin.com/pub/alex-trebolle-liz/1a/989/3b7">https://www.linkedin.com</a></p>
+    </div>
+  </article>
+
+
+<!-- Extra  data-->
+  <!--article class="api-section">
+
+    <h2>Extra data</h2>
+    <div>{{apiProfile.extra |json}}</div>
+
+  </article-->
+
+
+</section>

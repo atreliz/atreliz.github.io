@@ -1,0 +1,455 @@
+
+/* -------------- GENERAL ------------ */
+
+body{
+	background: #fff;
+}
+
+.top50{
+	margin-top: 50px;
+}
+
+.w60{
+	width: 60%;
+}
+.w65{
+	width: 65%;
+}
+
+.w33auto{
+	width:30%;
+	margin: 0% 1.5%
+}
+
+.w33 {
+	width:30%;
+	margin: 0%
+}
+
+.w33:first-child,.w33.first-child {
+	width:30%;
+	margin-right: 5%
+}
+
+.w33:last-child,.w33.last-child {
+	width:30%;
+	margin-left: 5%
+}
+
+.api-section:first-child {
+	margin-top:0%;
+
+}
+.api-section {
+    float: left;
+    display: block;
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0%;
+
+    box-shadow: 0px 0px 0px black;
+    background: rgb(255, 255, 255);
+}
+
+.api-section.insider{
+	width: 80%;
+    padding: 0% 10%;
+}
+
+.blockcenter{
+	display: inline-block;
+    margin: 10px auto;
+}
+
+.bluetitle{
+	color:#225887;
+	font-weight: bold;
+}
+.txtwhite{color:white;}
+.txtblue{
+	color:#225887;
+}
+
+
+
+/* ----- SCROLL HORIZONTAL CONTROLLERS -------*/
+body.cv  #recomendations .owl-controls {
+	position: absolute;
+	top: 0px;
+	text-align: center;
+	margin: auto;
+	clear: both;
+	right: 40%;
+}
+body.cv  #recomendations .owl-wrapper-outer{margin-top: 64px;}
+
+
+
+
+
+
+/* -------------- INTRO SECTION ------------ */
+#intro{
+	
+
+}
+
+#intro #sky{
+	height: 410px;
+	padding-top:90px; 
+
+	background: #225887 url('../images/blue.jpeg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+
+
+#intro .subTitle,#intro .mainTitle{
+	text-shadow: 2px 2px 2px #eee;
+	font-weight: bold;
+
+}
+
+#intro .mainTitle{
+	font-size: 1.5em;
+}
+
+#logos{
+	background: rgba(12, 66, 112,.9);
+	position: relative;
+    top: 200px;
+    width: auto;
+    text-align: center;
+    margin: auto;
+    left: auto;
+    right: auto;
+
+	background: -moz-linear-gradient(top, rgba(12,65,112,1) 0%, rgba(252,252,252,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(12,65,112,1)), color-stop(100%, rgba(252,252,252,1)));
+	background: -webkit-linear-gradient(top, rgba(12,65,112,1) 0%, rgba(252,252,252,1) 100%);
+	background: -o-linear-gradient(top, rgba(12,65,112,1) 0%, rgba(252,252,252,1) 100%);
+	background: -ms-linear-gradient(top, rgba(12,65,112,1) 0%, rgba(252,252,252,1) 100%);
+	background: linear-gradient(to bottom, rgba(12,65,112,1) 0%, rgba(252,252,252,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c4170', endColorstr='#fcfcfc', GradientType=0 );
+
+}
+#logos img{
+	float: left;
+	height: 50px;
+	width: auto;
+	margin-right: 20px;
+}
+
+body.cv #intro nav.options{
+	position: fixed;
+    top: 10px;
+    left: 0px;
+    width: 100%;
+
+    background: #225887;
+    background: rgba(255, 255, 255,.1);
+}
+
+body.cv #intro nav.options.fix{
+	background: #000;
+	position: fixed;
+	top: 0px;
+	left:0px;
+	right: 0px;
+	z-index: 999999;
+}
+
+body.cv #intro nav.options ul li a:hover{
+	color:#225887;
+	text-shadow: 1px 1px 1px #fff;
+}
+body.cv #intro nav.options ul li a{
+	text-shadow: 1px 1px 1px #225887;
+}
+
+
+
+
+/* -------------- ME SECTION ------------ */
+
+body.cv #me .imgprofile {
+	width: 60%;
+	display: block;
+	margin-top: 30px;
+    margin-bottom: 10px;
+
+    border-radius: 5%;
+    box-shadow: 0px 0px 10px#225887;
+}
+#imager{
+	width: 30%;
+    margin-right: 4%;
+    border-radius: 8px;
+    box-shadow: 1px 1px 8px #bbb;
+    padding-bottom: 20px;
+}
+
+#pskills{
+	float: left;
+	width: 90%;
+	margin: 0% 5%;
+}
+
+#pskills li{
+	font-variant: small-caps;
+	font-style: oblique;
+    list-style-type: circle;
+    margin: 2px 15px !important;
+
+}
+
+
+
+/*----------------- RECOMENDATIONS ------------------------*/
+#recommend{
+	background:  url('../images/people-talking.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0px 280px;
+}
+
+#recommend .recomendationtxtbox{
+	float: left;
+    width: 98%;
+    height: auto;
+    padding: 1%;
+    border: 1px solid #000;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px #ccc;
+    background:#fff;
+}
+
+#recommend .recomendationtxtbox, #recommend .signer{
+	color: black;
+    font-style: italic;
+}
+
+.arrow-down {
+	float: left;
+	width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 40px solid #000;
+}
+.firm{
+	    float: left;
+    margin-left: 35%;
+}
+
+
+body.cv #recomendations .recomendation .small {
+    text-align: right;
+    font-style: italic;
+    color: black;
+    margin-top: 30px;
+    width: auto;
+    float: left;
+    margin-left: 20px;
+}
+
+body.cv #recomendations .owl-wrapper-outer {
+    box-shadow: 0px 0px 0px rgb(0, 0, 0);
+    border-radius: 0px;
+}
+
+.recomendationtxtbox:nth-child(even){
+
+}
+.recomendationtxtbox:nth-child(odd){
+	
+}
+
+#recomendations.owl-theme .owl-controls .owl-page span{
+	background: #fff;
+    border: 2px solid black;
+    box-shadow: 0px 0px 4px #bbb;
+}
+
+#recomendations.owl-theme .owl-controls .owl-page span:hover{
+	background: #000;
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 4px #000;
+}
+#recomendations.owl-theme .owl-controls .owl-buttons div{
+    opacity: 0.9;
+    background: #fff;
+    border: 2px solid black;
+    color: black;
+    font-size: 18px;
+    box-shadow: 0px 0px 4px #bbb;
+}
+
+#recomendations.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+    opacity: 0.9;
+    background: #000;
+    border: 2px solid #bbb ;
+    color: white;
+    font-size: 18px;
+    box-shadow: 0px 0px 4px black;
+}
+
+/*--------- JOBS --------*/
+#work{
+    height: 550px;
+    background: url('../images/dreamjob.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* padding: 10px; */
+    background-position: 0px 0px;
+
+}
+
+#work .experience{
+    width: 70%;
+    background-color: #fff;
+    padding: 5px 10px;
+    border: 4px solid #000;
+    border-radius: 20px;
+    box-shadow: inset 3px 3px 3px #ccc;
+    margin: 0% 15%;
+
+}
+
+#jobs.owl-theme .owl-controls .owl-page span{
+	background: #fff;
+    border: 2px solid black;
+    box-shadow: 0px 0px 4px #bbb;
+}
+
+#jobs.owl-theme .owl-controls .owl-page span:hover{
+	background: #000;
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 4px #000;
+}
+
+#jobs.owl-theme .owl-controls .owl-buttons div{
+    opacity: 0.9;
+    background: #fff;
+    border: 2px solid black;
+    color: black;
+    font-size: 18px;
+    box-shadow: 0px 0px 4px #bbb;
+}
+
+#jobs.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+    opacity: 0.9;
+    background: #000;
+    border: 2px solid #bbb ;
+    color: white;
+    font-size: 18px;
+    box-shadow: 0px 0px 4px black;
+}
+
+#jobs .period{
+	margin-top: 10px;
+	color:#225887;
+}
+
+
+/*--------- CODE --------*/
+#code{
+	background: url('../images/code2.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+
+}
+#code .repos{
+	background-color: #fff;
+}
+#code .repos:hover{
+	background-color:#225887;
+}
+body.cv .repos:hover .circle {
+    background: white;
+    color:#225887;
+}
+body.cv #code  .repos {
+    width: 19%;
+    padding: 1%;
+    margin: 2% 2%;
+    margin-top: 1%;
+    float: left;
+    border-radius: 13px;
+    box-shadow: 0px 0px 5px #000;
+    min-height: 175px;
+    cursor: pointer;
+    height: 170px;
+}
+body.cv #code .repos .description {
+    font-size: 14px;
+    height: 90px;
+}
+
+
+.ellipsis {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+
+/*-------- CONTACT --------*/
+
+
+#contact .fa{color: #225887;}
+#contact p{margin: 2% auto;}
+
+
+/*-------- CLIENTS --------*/
+#clients img{
+	float: left;
+	margin: 1% 2%;
+	width: 100px;
+}
+
+/* FLIP CODE */
+		/* entire container, keeps perspective */
+		.flip-container {
+			perspective: 1000;
+		}
+			/* flip the pane when hovered */
+			.flip-container:hover .flipper, .flip-container.hover .flipper {
+				transform: rotateY(180deg);
+			}
+
+
+
+		/* flip speed goes here */
+		.flipper {
+			transition: 0.6s;
+			transform-style: preserve-3d;
+
+			position: relative;
+		}
+
+		/* hide back of pane during swap */
+		.front, .back {
+			backface-visibility: hidden;
+
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		/* front pane, placed above back */
+		.front {
+			z-index: 2;
+			/* for firefox 31 */
+			transform: rotateY(0deg);
+		}
+
+		/* back, initially hidden pane */
+		.back {
+			transform: rotateY(180deg);
+		}
