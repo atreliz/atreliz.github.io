@@ -403,24 +403,24 @@ angular.module('ProfileApp')
         ];
 
         $scope.dataPIEFront = [
-            { key: "AngularJS",    y: 5   },
-            { key: "JQUERY",    y: 2   },
-            { key: "D3",  y: 9   },
-            { key: "Bower",   y: 7   },
-            { key: "CSS3",   y: 4   },
-            { key: "HTML5",    y: 3   },
-            { key: "Phonegap",    y: 3   },
-            { key: "Responsive",  y: .5  }
+            { key: "AngularJS",    y: 90   },
+            { key: "JQUERY",    y: 70   },
+            { key: "D3",  y: 70   },
+            { key: "Bower",   y: 60   },
+            { key: "CSS3",   y: 75   },
+            { key: "HTML5",    y: 80   },
+            { key: "Phonegap",    y: 60   },
+            { key: "Responsive",  y: 80  }
         ];
 
         $scope.dataPIEBack = [
-            { key: "NodeJS",    y: 5   },
-            { key: "AWS EC2",    y: 2   },
-            { key: "APIs",    y: 2   },
-            { key: "Grunt/Gulp",    y: 2   },
-            { key: "EXPRESS",   y: 4   },
-            { key: "WORDPRES",    y: 3   },
-            { key: "PHP",  y: .5  }
+            { key: "NodeJS",    y: 75   },
+            { key: "AWS EC2",    y: 60   },
+            { key: "APIs",    y: 70   },
+            { key: "Grunt/Gulp",    y: 70   },
+            { key: "EXPRESS",   y: 75   },
+            { key: "WORDPRES",    y: 60   },
+            { key: "PHP",  y: 40  }
         ];
 
 

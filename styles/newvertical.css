@@ -8,6 +8,14 @@ body{
 .top50{
 	margin-top: 50px;
 }
+.top75{
+	margin-top: 75px;
+}
+
+
+.w40{
+	width: 40%;
+}
 
 .w60{
 	width: 60%;
@@ -24,6 +32,9 @@ body{
 .w33 {
 	width:30%;
 	margin: 0%
+}
+.w33pure{
+	width:33%;
 }
 
 .w33:first-child,.w33.first-child {
@@ -68,6 +79,21 @@ body{
 .txtwhite{color:white;}
 .txtblue{
 	color:#225887;
+}
+
+.boxmail{
+	display: inline-block;
+	border-radius: 3px;
+	box-shadow: 2px 2px 3px #bbb;
+	border:1px solid #000;
+	padding: 5px 10px;
+	width: auto;
+    margin: auto;
+}
+
+#contact a:hover .fa{
+	color:red;
+	border: 3px solid red;
 }
 
 
@@ -117,6 +143,8 @@ body.cv  #recomendations .owl-wrapper-outer{margin-top: 64px;}
 }
 
 #logos{
+	cursor: pointer;
+
 	background: rgba(12, 66, 112,.9);
 	position: relative;
     top: 200px;
@@ -140,6 +168,18 @@ body.cv  #recomendations .owl-wrapper-outer{margin-top: 64px;}
 	height: 50px;
 	width: auto;
 	margin-right: 20px;
+
+	-webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+#logos img:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
 
 body.cv #intro nav.options{
@@ -182,7 +222,64 @@ body.cv #me .imgprofile {
 
     border-radius: 5%;
     box-shadow: 0px 0px 10px#225887;
+
+        -webkit-transform: translateZ(0);
+	    transform: translateZ(0);
+	    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	    -webkit-backface-visibility: hidden;
+	    backface-visibility: hidden;
+	    -moz-osx-font-smoothing: grayscale;
+	    -webkit-transform-origin: 0 100%;
+	    transform-origin: 0 100%;
 }
+
+body.cv #me .imgprofile:hover{
+	cursor: pointer;
+
+    -webkit-animation-name: hvr-wobble-top;
+    animation-name: hvr-wobble-top;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+
+@keyframes hvr-wobble-top {
+  16.65% {
+    -webkit-transform: skew(-12deg);
+    transform: skew(-12deg);
+  }
+
+  33.3% {
+    -webkit-transform: skew(10deg);
+    transform: skew(10deg);
+  }
+
+  49.95% {
+    -webkit-transform: skew(-6deg);
+    transform: skew(-6deg);
+  }
+
+  66.6% {
+    -webkit-transform: skew(4deg);
+    transform: skew(4deg);
+  }
+
+  83.25% {
+    -webkit-transform: skew(-2deg);
+    transform: skew(-2deg);
+  }
+
+  100% {
+    -webkit-transform: skew(0);
+    transform: skew(0);
+  }
+}
+
+
 #imager{
 	width: 30%;
     margin-right: 4%;
@@ -190,6 +287,42 @@ body.cv #me .imgprofile {
     box-shadow: 1px 1px 8px #bbb;
     padding-bottom: 20px;
 }
+
+/*
+body.cv #me .imgprofile{
+	-webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+body.cv #me .imgprofile:before{
+    content: " wwww";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #2098d1;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+body.cv #me .imgprofile:hover:before{
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+*/
 
 #pskills{
 	float: left;
@@ -402,7 +535,25 @@ body.cv #code .repos .description {
 /*-------- CONTACT --------*/
 
 
-#contact .fa{color: #225887;}
+#contact .fa{
+	color: #225887;
+    border: 3px solid #225887;
+    border-radius: 30px;
+    padding: 8px;
+    box-shadow: 1px 1px 1px #bbb;
+    font-size: 30px;
+}
+
+#contact .special .fa{
+	float: left;
+    margin: 10px auto;
+}
+
+#contact .special span{
+	float: left;
+	margin: 27px 10px;
+}
+
 #contact p{margin: 2% auto;}
 
 
@@ -411,6 +562,54 @@ body.cv #code .repos .description {
 	float: left;
 	margin: 1% 2%;
 	width: 100px;
+	    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    cursor: pointer;
+}
+
+#clients img:hover{
+	-webkit-animation-name: hvr-wobble-vertical;
+    animation-name: hvr-wobble-vertical;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+
+}
+
+
+@keyframes hvr-wobble-vertical {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
 }
 
 /* FLIP CODE */

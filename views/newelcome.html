@@ -168,17 +168,7 @@
     </ul>
 
 
-    <!--ul class="repos" ng-repeat="repo in apiProfile.github.repos">
-        <a target="_blanck" href="{{repo.html_url}}">
-          <li class=" w100 fleft"><span class="circle">{{$index+1}}</span> </li>
-          <li class=" w100 fleft txtcenter title">{{repo.name}} </li>
-          <li class=" w100 fleft txtcenter description">{{repo.description}} </li>
-          <li class=" w100 fleft txtcenter"> 
-            <i class="fa fa-github"></i> Take a look to the <a target="_blanck" href="{{repo.html_url}}">Repo</a>
-          </li>
-          <li class=" w100 fleft"><span class="small fright">{{repo.created_at}}</span> </li>
-        </a>
-    </ul-->
+
   </article>
 
 
@@ -227,25 +217,41 @@
 
 <!-- GH user data-->
   <article  id="contact" class="api-section insider">
-    <h2>Contact Info</h2>
+    <h2>Do you wanna talk?</h2>
     <div>
-     
-      <p class="w30 txtcenter fleft"><i class="fa fa-envelope"></i> <a href="{{apiProfile.github.user.email}}">{{apiProfile.github.user.email}}</a></p>
-      <p class="w30 txtcenter fleft"> <i class="fa fa-book"></i> <a href="{{apiProfile.extra.portfolio}}">www.newebtaste.com</a></p>
-      <p class="w30 txtcenter fleft"> <i class="fa fa-twitter"></i> <a href="https://twitter.com/Alex_Trebolle">https://twitter.com/Alex_Trebolle</a></p>
-      <p class="w50 txtcenter fleft"> <i class="fa fa-github"></i> <a href="{{githubUser.html_url}}">{{githubUser.html_url}}</a></p>
-      <p class="w50 txtcenter fleft"><i class="fa fa-linkedin-square"></i>  <a href="https://www.linkedin.com/pub/alex-trebolle-liz/1a/989/3b7">https://www.linkedin.com</a></p>
+
+         <div class="w50 fleft txtcenter top75">
+
+            <a href="mailto:{{apiProfile.github.user.email}}?Subject=Hello%20again" target="_top" class=" txtcenter "> 
+                <i class="fa fa-envelope"></i> 
+                <span class="">{{apiProfile.github.user.email}}</span>
+            </a>
+
+        </div>
+
+         <div class="w50 fleft txtcenter special">
+
+            <a href="https://twitter.com/Alex_Trebolle" class="w100 txtleft fleft"> 
+                <i class="fa fa-twitter"></i> 
+                <span class="showauto">https://twitter.com/Alex_Trebolle</span>
+            </a>
+
+            <a href="{{githubUser.html_url}}" class="w100 txtleft fleft"> 
+                <i class="fa fa-github"></i> 
+                <span class="showauto">{{githubUser.html_url}}</span>
+            </a>
+
+            <a href="https://www.linkedin.com/pub/alex-trebolle-liz/1a/989/3b7" class="w100 txtleft fleft">
+                <i class="fa fa-linkedin-square"></i>  
+                <span class="showauto">https://www.linkedin.com</span>
+            </a>
+        </div>
+
     </div>
   </article>
 
 
-<!-- Extra  data-->
-  <!--article class="api-section">
 
-    <h2>Extra data</h2>
-    <div>{{apiProfile.extra |json}}</div>
-
-  </article-->
 
 
 </section>
