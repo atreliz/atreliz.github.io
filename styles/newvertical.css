@@ -286,7 +286,13 @@ body.cv #me .imgprofile:hover{
     border-radius: 8px;
     box-shadow: 1px 1px 8px #bbb;
     padding-bottom: 20px;
+
+    font-family: 'Open Sans Condensed', sans-serif;
 }
+
+
+
+
 
 /*
 body.cv #me .imgprofile{
@@ -331,7 +337,6 @@ body.cv #me .imgprofile:hover:before{
 }
 
 #pskills li{
-	font-variant: small-caps;
 	font-style: oblique;
     list-style-type: circle;
     margin: 2px 15px !important;
@@ -357,6 +362,9 @@ body.cv #me .imgprofile:hover:before{
     border-radius: 20px;
     box-shadow: 2px 2px 2px #ccc;
     background:#fff;
+
+    
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 #recommend .recomendationtxtbox, #recommend .signer{
@@ -449,6 +457,10 @@ body.cv #recomendations .owl-wrapper-outer {
     box-shadow: inset 3px 3px 3px #ccc;
     margin: 0% 15%;
 
+}
+
+#jobs .owl-item{
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 
 #jobs.owl-theme .owl-controls .owl-page span{
