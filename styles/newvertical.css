@@ -651,6 +651,7 @@ body.cv #code .repos .description {
 			position: absolute;
 			top: 0;
 			left: 0;
+			width: 100%;
 		}
 
 		/* front pane, placed above back */
