@@ -665,3 +665,115 @@ body.cv #code .repos .description {
 		.back {
 			transform: rotateY(180deg);
 		}
+
+
+/* ------ RESPONSIVE ---*/
+
+@media only screen and (max-width: 800px) {
+    .api-section.insider {
+        width: 98%;
+        padding: 0% 1%;
+    }
+
+    #intro #sky {
+        background-size: cover;
+    }
+
+    #logos {
+        width: 92%;
+        padding: 0% 4%;
+    }
+
+    #logos img {
+        height: 35px;
+    }
+
+    #imager {
+        width: 92%;
+        float: right;
+        margin: 0% 4%;
+    }
+
+    #me .w65.fright{
+        width: 92%;
+        margin: 0% 4%;
+    }
+
+    #skills .w40.first-child.fleft,#skills .w60.fleft{
+        width: 92%;
+        margin: 0% 4%;
+    }
+
+    #work .txtcenter.txtwhite{
+        margin-left: auto;
+    }
+
+    #work {
+        height: auto;
+        background-size: cover;
+    }
+
+    #code .repos{
+        width: 44% !important;
+    }
+
+    #tweets li{
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    body.cv #recomendations .owl-controls {
+        right: 30%;
+    }
+    #recommend {
+        background-position: bottom;
+    }
+    #contact .w50 {
+        width: 100%;
+    }
+
+    #contact .w50{
+        width: 95%;
+        margin-left: 5%;
+    }
+    #contact .w50.fleft.txtcenter.top75 a{
+        float: left;
+        margin-bottom:20px; 
+    }
+    
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+        body.cv #me .imgprofile{
+            width: 40%;
+            float: left;
+            margin: 2%;
+        }
+        #pskills {
+            width: 46%;
+            padding-top: 25px;
+        }
+        .api-section.insider {
+            width: 94%;
+            padding: 0% 3%;
+        }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 800px) {
+    #recommend {
+        background-position: 0px 280px;
+    }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 900px) {
+    #logos img {
+        float: left;
+        height: 40px;
+    }
+    .api-section.insider {
+            width: 94%;
+            padding: 0% 3%;
+        }
+}
+
+
