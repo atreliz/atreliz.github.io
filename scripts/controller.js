@@ -553,7 +553,7 @@ angular.module('ProfileApp')
   	.controller('infographicCtrl',['$scope','$rootScope','$timeout', function ($scope,$rootScope,$timeout) {
 
 
-			 
+			 $rootScope.mode="cv infographic";
 				 	
 			  
 
@@ -564,4 +564,4 @@ angular.module('ProfileApp')
 
   }]);
 
-  	
+

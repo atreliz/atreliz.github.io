@@ -2,18 +2,32 @@
 	
 }
 
+
+
+
+body.cv.infographic #me {
+    margin-top: 20px;
+}
+
 #infographic .api-section.insider {
     width: 96%;
     padding: 0% 2%;
 }
 
-body.cv #infographic  #me .imgprofile{
+body.cv.infographic #infographic  #me .imgprofile{
 	    width: 40%;
     padding: 5% 10%;
     padding-right: 5%;
+        margin: 0px;
 }
 
-body.cv #infographic  #me .imgprofile img{
+#infographic #pskills li.live{
+	    margin-top: 0px!important;
+    padding-top: 30px;
+}
+
+
+body.cv.infographic #infographic  #me .imgprofile img{
 	border-radius: 20px;
     width: 100%;
     box-shadow: 1px 1px 1px #bbb;
@@ -67,7 +81,7 @@ body.cv #infographic  #me .imgprofile img{
 }
 
 
-body.cv #infographic  #me .imgprofile img{
+body.cv.infographic #infographic  #me .imgprofile img{
 	    box-shadow: 0px 0px 10px#225887;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
@@ -79,7 +93,7 @@ body.cv #infographic  #me .imgprofile img{
     transform-origin: 0 100%;
 }
 
-body.cv  #infographic  #me .imgprofile img:hover {
+body.cv.infographic  #infographic  #me .imgprofile img:hover {
     cursor: pointer;
     -webkit-animation-name: hvr-wobble-top;
     animation-name: hvr-wobble-top;
