@@ -7,13 +7,13 @@
     padding: 0% 2%;
 }
 
-#infographic .imgprofile{
+body.cv #infographic  #me .imgprofile{
 	    width: 40%;
     padding: 5% 10%;
     padding-right: 5%;
 }
 
-#infographic .imgprofile img{
+body.cv #infographic  #me .imgprofile img{
 	border-radius: 20px;
     width: 100%;
     box-shadow: 1px 1px 1px #bbb;
