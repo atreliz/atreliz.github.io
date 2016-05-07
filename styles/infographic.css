@@ -1,0 +1,92 @@
+#infographic{
+	
+}
+
+#infographic .api-section.insider {
+    width: 96%;
+    padding: 0% 2%;
+}
+
+#infographic .imgprofile{
+	    width: 40%;
+    padding: 5% 10%;
+    padding-right: 5%;
+}
+
+#infographic .imgprofile img{
+	border-radius: 20px;
+    width: 100%;
+    box-shadow: 1px 1px 1px #bbb;
+}
+
+
+#infographic #logos {
+    top: auto ;
+    background: #fff;
+}
+
+#infographic  .boxed{
+	border-radius: 8px;
+    box-shadow: 1px 1px 8px #bbb;
+    padding: 2.5%;
+}
+
+#infographic  #imager {
+	font-family: inherit;
+}
+
+#infographic  .pdtop40{
+	padding-top: 40px;
+}
+
+#infographic  .txtblue{
+	color:#225887;
+}
+
+#infographic #pskills li{
+	margin: 5px 15px !important;
+}
+
+
+
+
+#infographic .mt16{
+	margin-top: 16px !important;
+}
+
+#infographic  #disclaimer{
+	background: black;
+	color: white;
+	    border-radius: 0px 0px 50px 50px;
+
+}
+
+#infographic  #disclaimer b{
+	color: red;
+	
+}
+
+
+body.cv #infographic  #me .imgprofile img{
+	    box-shadow: 0px 0px 10px#225887;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+}
+
+body.cv  #infographic  #me .imgprofile img:hover {
+    cursor: pointer;
+    -webkit-animation-name: hvr-wobble-top;
+    animation-name: hvr-wobble-top;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+

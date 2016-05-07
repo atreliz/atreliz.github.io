@@ -549,8 +549,19 @@ angular.module('ProfileApp')
  
 
 		}, 0);
+	}])
+  	.controller('infographicCtrl',['$scope','$rootScope','$timeout', function ($scope,$rootScope,$timeout) {
 
 
+			 
+				 	
+			  
+
+
+
+  
 
 
   }]);
+
+  	

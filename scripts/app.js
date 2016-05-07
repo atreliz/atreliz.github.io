@@ -27,6 +27,10 @@ angular.module('ProfileApp', ['ngRoute','ngSanitize','APIServices','nvd3'])
         templateUrl: 'views/newelcome.html',
         controller: 'newelcomeCtrl'
       })
+      .when('/infographic', {
+        templateUrl: 'views/infographic.html',
+        controller: 'infographicCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
