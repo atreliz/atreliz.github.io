@@ -103,4 +103,20 @@ body.cv.infographic  #infographic  #me .imgprofile img:hover {
     animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
+}
 
+
+@media only screen and (max-width: 800px) {
+
+	body.cv.infographic #infographic #map{
+	    width: 88%;
+	    float: right;
+	    margin: 4% 4%;
+	    padding: 2%;
+
+	}
+	body.cv.infographic #infographic .w50.fleft.txtcenter.top75{
+		margin-top: 25px;
+	}
+
+}
